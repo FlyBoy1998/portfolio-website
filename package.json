@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Florin Miron portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:build": "sass --no-source-map scss:assets/css",
+    "sass:watch": "sass --no-source-map --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlyBoy1998/portfolio-website.git"
+  },
+  "author": "Florin Miron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlyBoy1998/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/FlyBoy1998/portfolio-website#readme",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}

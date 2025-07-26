@@ -1,3 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
-  background-color: #333;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #0a0a56;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/earth-tech.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.header p {
+  letter-spacing: 1.1px;
+}
+.header p:nth-of-type(1) {
+  color: #bdbdbd;
+  font-style: italic;
+}
+.header p:nth-of-type(2) {
+  color: #919191;
+}
+.header .heading {
+  color: #f5f5f5;
+  z-index: 0;
+}
+.header .heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #d18a06, #101010);
+  filter: blur(1rem);
+}
+
+#finisher-canvas {
+  background-color: rgba(0, 0, 0, 0) !important;
+  z-index: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
 }

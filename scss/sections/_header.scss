@@ -1,0 +1,43 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/earth-tech.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  p {
+    letter-spacing: 1.1px;
+
+    &:nth-of-type(1) {
+      color: $color-gray-light;
+      font-style: italic;
+    }
+    &:nth-of-type(2) {
+      color: $color-gray;
+    }
+  }
+
+  .heading {
+    color: $color-white;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background: linear-gradient(to right, $color-primary-dark, $color-black);
+      filter: blur(1rem);
+    }
+  }
+}
+
+#finisher-canvas {
+  background-color: rgba(0, 0, 0, 0) !important;
+  z-index: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}

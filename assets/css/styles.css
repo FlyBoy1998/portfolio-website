@@ -75,19 +75,20 @@ h6 {
   border-bottom: 2px solid transparent;
 }
 .header .navbar__links .hire-me-btn {
-  background-color: #d18a06;
+  background-color: #ffb428;
   padding: 3.2rem 2rem;
   border-radius: 2rem;
   color: #101010;
-  transition: all 0.25s ease-out;
+  transition: color 0.25s ease-out;
 }
 .header .navbar__links .hire-me-btn:hover, .header .navbar__links .hire-me-btn:active {
   color: #f5f5f5;
-  background-color: #ffb428;
 }
 .header .navbar__links--link {
   color: #f5f5f5;
   transition: all 0.25s ease-out;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
 }
 .header .navbar__links--link:hover, .header .navbar__links--link:active {
   color: #ffb428;
@@ -98,6 +99,7 @@ h6 {
 }
 .header p {
   letter-spacing: 1.1px;
+  z-index: 1;
 }
 .header p:nth-of-type(1) {
   color: #bdbdbd;
@@ -120,6 +122,53 @@ h6 {
   z-index: -1;
   background: linear-gradient(to right, #d18a06, #101010);
   filter: blur(1rem);
+}
+.header .cta-buttons {
+  gap: 1.4rem;
+}
+.header .cta-buttons > * {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #ffb428;
+  color: #ffb428;
+  padding: 1rem;
+  z-index: 1;
+  transition: all 0.15s ease-out;
+}
+.header .cta-buttons > *:not(:last-child):hover, .header .cta-buttons > *:not(:last-child):active {
+  background-color: #ffb428;
+  color: #f5f5f5;
+}
+.header .cta-buttons__download-cv {
+  border-radius: 2rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+.header .cta-buttons__download-cv:hover {
+  transform: scale(1.1);
+}
+.header .cta-buttons__download-cv:active {
+  transform: scale(1.05);
+}
+.header .cta-buttons__github, .header .cta-buttons__github-student {
+  min-width: 3.25rem;
+  min-height: 3.25rem;
+  border-radius: 50%;
+}
+.header .cta-buttons__github:hover, .header .cta-buttons__github-student:hover {
+  transform: scale(1.15);
+}
+.header .cta-buttons__github:active, .header .cta-buttons__github-student:active {
+  transform: scale(1.1);
+}
+.header .cta-buttons__github-student {
+  border-color: #2cc3ff;
+  color: #2cc3ff;
+}
+.header .cta-buttons__github-student:hover, .header .cta-buttons__github-student:active {
+  background-color: #2cc3ff;
+  color: #f5f5f5;
 }
 
 #finisher-canvas {

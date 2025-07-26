@@ -30,22 +30,23 @@
       border-bottom: 2px solid transparent;
 
       .hire-me-btn {
-        background-color: $color-primary-dark;
+        background-color: $color-primary;
         padding: 3.2rem 2rem;
         border-radius: 2rem;
         color: $color-black;
-        transition: all 0.25s ease-out;
+        transition: color 0.25s ease-out;
 
         &:hover,
         &:active {
           color: $color-white;
-          background-color: $color-primary;
         }
       }
 
       &--link {
         color: $color-white;
         transition: all 0.25s ease-out;
+        font-family: "Orbitron", sans-serif;
+        font-weight: 600;
 
         &:hover,
         &:active {
@@ -62,6 +63,7 @@
 
   p {
     letter-spacing: 1.1px;
+    z-index: 1;
 
     &:nth-of-type(1) {
       color: $color-gray-light;
@@ -86,6 +88,66 @@
       z-index: -1;
       background: linear-gradient(to right, $color-primary-dark, $color-black);
       filter: blur(1rem);
+    }
+  }
+
+  .cta-buttons {
+    gap: 1.4rem;
+
+    & > * {
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+      border: 2px solid $color-primary;
+      color: $color-primary;
+      padding: 1rem;
+      z-index: 1;
+      transition: all 0.15s ease-out;
+
+      &:not(:last-child):hover,
+      &:not(:last-child):active {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+
+    &__download-cv {
+      border-radius: 2rem;
+      padding-left: 2.2rem;
+      padding-right: 2.2rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      &:active {
+        transform: scale(1.05);
+      }
+    }
+
+    &__github,
+    &__github-student {
+      min-width: 3.25rem;
+      min-height: 3.25rem;
+      border-radius: 50%;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+
+    &__github-student {
+      border-color: $color-blue-light;
+      color: $color-blue-light;
+
+      &:hover,
+      &:active {
+        background-color: $color-blue-light;
+        color: $color-white;
+      }
     }
   }
 }

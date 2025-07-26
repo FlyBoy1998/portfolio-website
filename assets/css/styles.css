@@ -54,6 +54,48 @@ h6 {
   background-repeat: no-repeat;
   background-position: top;
 }
+.header .navbar {
+  color: #f5f5f5;
+  padding: 3rem 0;
+  z-index: 1;
+}
+.header .navbar__logo {
+  color: #f5f5f5;
+  font-family: "Orbitron", sans-serif;
+  transition: color 0.25s ease-out;
+}
+.header .navbar__logo span {
+  color: #ffb428;
+}
+.header .navbar__logo:hover, .header .navbar__logo:active {
+  color: #ffb428;
+}
+.header .navbar__links {
+  gap: 2.4rem;
+  border-bottom: 2px solid transparent;
+}
+.header .navbar__links .hire-me-btn {
+  background-color: #d18a06;
+  padding: 3.2rem 2rem;
+  border-radius: 2rem;
+  color: #101010;
+  transition: all 0.25s ease-out;
+}
+.header .navbar__links .hire-me-btn:hover, .header .navbar__links .hire-me-btn:active {
+  color: #f5f5f5;
+  background-color: #ffb428;
+}
+.header .navbar__links--link {
+  color: #f5f5f5;
+  transition: all 0.25s ease-out;
+}
+.header .navbar__links--link:hover, .header .navbar__links--link:active {
+  color: #ffb428;
+}
+.header .navbar__links--link.active {
+  color: #ffb428;
+  border-bottom: 2px solid #ffb428;
+}
 .header p {
   letter-spacing: 1.1px;
 }

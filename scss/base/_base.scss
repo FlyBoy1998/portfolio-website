@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(desktop-small) {
+    font-size: 75%; // 1rem = 12, 12/16
+  }
+  @include respond(desktop-large) {
+    font-size: 100%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: $color-secondary;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+}

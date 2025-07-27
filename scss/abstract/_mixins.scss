@@ -1,8 +1,13 @@
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == phone-port {
     @media only screen and (max-width: 36em) {
       @content;
     } // 576px
+  }
+  @if $breakpoint == phone-land {
+    @media only screen and (max-width: 48em) and (orientation: landscape) {
+      @content;
+    } // <= 768px in landscape
   }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 48em) {

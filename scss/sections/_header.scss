@@ -58,6 +58,40 @@
           border-bottom: 2px solid $color-primary;
         }
       }
+
+      @include respond(tab-port) {
+        display: none !important;
+      }
+    }
+
+    &__hamburger-btn {
+      display: none;
+      position: relative;
+      border: none;
+      width: 4rem;
+      height: 2.4rem;
+      background-color: transparent;
+
+      span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0.5rem;
+        border-radius: 1rem;
+        background-color: $color-white;
+        transition: 0.25s ease-out;
+
+        &:nth-of-type(1) {
+          top: 0;
+        }
+        &:nth-of-type(3) {
+          top: 100%;
+        }
+      }
+
+      @include respond(tab-port) {
+        display: block;
+      }
     }
   }
 

@@ -97,6 +97,39 @@ h6 {
   color: #ffb428;
   border-bottom: 2px solid #ffb428;
 }
+@media only screen and (max-width: 48em) {
+  .header .navbar__links {
+    display: none !important;
+  }
+}
+.header .navbar__hamburger-btn {
+  display: none;
+  position: relative;
+  border: none;
+  width: 4rem;
+  height: 2.4rem;
+  background-color: transparent;
+}
+.header .navbar__hamburger-btn span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  transition: 0.25s ease-out;
+}
+.header .navbar__hamburger-btn span:nth-of-type(1) {
+  top: 0;
+}
+.header .navbar__hamburger-btn span:nth-of-type(3) {
+  top: 100%;
+}
+@media only screen and (max-width: 48em) {
+  .header .navbar__hamburger-btn {
+    display: block;
+  }
+}
 .header p {
   letter-spacing: 1.1px;
   z-index: 1;

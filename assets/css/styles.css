@@ -132,7 +132,6 @@ h6 {
 }
 .header p {
   letter-spacing: 1.1px;
-  z-index: 1;
 }
 .header p:nth-of-type(1) {
   color: #bdbdbd;
@@ -140,6 +139,11 @@ h6 {
 }
 .header p:nth-of-type(2) {
   color: #919191;
+}
+@media only screen and (max-width: 36em) {
+  .header p:nth-of-type(2) {
+    width: 75% !important;
+  }
 }
 .header .heading {
   color: #f5f5f5;

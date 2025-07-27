@@ -97,7 +97,6 @@
 
   p {
     letter-spacing: 1.1px;
-    z-index: 1;
 
     &:nth-of-type(1) {
       color: $color-gray-light;
@@ -105,6 +104,10 @@
     }
     &:nth-of-type(2) {
       color: $color-gray;
+
+      @include respond(phone) {
+        width: 75% !important;
+      }
     }
   }
 

@@ -32,7 +32,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header class="header finisher-header min-vh-100 d-flex align-items-center">
+    <header
+      class="header finisher-header min-vh-100 d-flex align-items-center position-relative"
+    >
       <nav class="navbar w-100 position-fixed top-0">
         <div class="container">
           <a
@@ -77,8 +79,6 @@
               >
             </li>
           </ul>
-
-          <!-- @@@@@@@@@@@@@@@@@@@@@@ build hamburger button -->
           <button
             class="navbar__hamburger-btn"
             aria-label="Hamburger Menu Button"
@@ -88,6 +88,40 @@
             <span></span>
           </button>
         </div>
+      </nav>
+
+      <!-- Offscreen navigation menu -->
+      <nav class="off-screen-nav d-none position-absolute h-100 active">
+        <ul class="list-unstyled off-screen-nav__links">
+          <li>
+            <a
+              href="#"
+              class="off-screen-nav__links--link text-decoration-none fs-1 fw-bold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="off-screen-nav__links--link text-decoration-none fs-1 fw-bold"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="off-screen-nav__links--link text-decoration-none fs-1 fw-bold"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="off-screen-nav__links--link text-decoration-none fs-1 fw-bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </nav>
       <div class="container">
         <div

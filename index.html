@@ -80,8 +80,10 @@
             </li>
           </ul>
           <button
-            class="navbar__hamburger-btn"
+            id="hamburger-btn"
+            class="navbar__hamburger-btn d-none position-relative"
             aria-label="Hamburger Menu Button"
+            aria-expanded="false"
           >
             <span></span>
             <span></span>
@@ -91,7 +93,10 @@
       </nav>
 
       <!-- Offscreen navigation menu -->
-      <nav class="off-screen-nav d-none position-absolute h-100 active">
+      <nav
+        id="off-screen-nav"
+        class="off-screen-nav d-none position-absolute h-100"
+      >
         <ul class="list-unstyled off-screen-nav__links">
           <li>
             <a

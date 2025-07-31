@@ -1,16 +1,22 @@
 const navbar = document.querySelector(".navbar");
 const headerTextContent = document.querySelector(".text-content");
 
+function isMobileViewport() {
+  return window.matchMedia("(max-width: 992px) and (pointer: coarse)").matches;
+}
+
 function setDynamicMargin() {
   const navbarHeight = navbar.getBoundingClientRect().height;
   if (
-    window.matchMedia("(orientation: landscape)").matches &&
-    window.innerWidth <= 768
+    isMobileViewport() &&
+    window.matchMedia("(orientation: landscape)").matches
   ) {
     headerTextContent.style.marginTop = `${navbarHeight}px`;
   } else {
-    headerTextContent.style.marginTop = 0;
+    headerTextContent.style.marginTop = "0px";
   }
 }
 
-window.addEventListener("resize", () => setDynamicMargin());
+window.addEventListener("DOMContentLoaded", setDynamicMargin);
+window.addEventListener("resize", setDynamicMargin);
+window.addEventListener("orientationchange", setDynamicMargin);

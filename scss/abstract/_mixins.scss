@@ -5,7 +5,7 @@
     } // 576px
   }
   @if $breakpoint == phone-land {
-    @media only screen and (max-width: 48em) and (orientation: landscape) {
+    @media only screen and (max-width: 62em) and (orientation: landscape) {
       @content;
     } // <= 768px in landscape
   }
@@ -15,7 +15,7 @@
     } // 768px
   }
   @if $breakpoint == tab-land {
-    @media only screen and (max-width: 15.872em) {
+    @media only screen and (max-width: 62em) {
       @content;
     } // 992px
   }

@@ -62,7 +62,7 @@ h6 {
 .header .navbar {
   color: #f5f5f5;
   padding: 3rem 0;
-  z-index: 3;
+  z-index: 2;
   transition: all 0.25s ease-out;
 }
 .header .navbar__logo {
@@ -153,7 +153,7 @@ h6 {
   filter: blur(1.2rem);
 }
 .header .off-screen-nav {
-  backdrop-filter: blur(1rem) brightness(30%);
+  background-color: #101010;
   width: 100%;
   right: 0;
   transform: translateX(100%);
@@ -169,12 +169,12 @@ h6 {
 }
 @media only screen and (max-width: 36em) {
   .header .off-screen-nav {
-    width: 100%;
+    width: 80%;
   }
 }
 .header .off-screen-nav.active {
   transform: translateX(0);
-  z-index: 2;
+  z-index: 3;
 }
 .header .off-screen-nav__links > *:not(:last-child) {
   margin-bottom: 3rem;

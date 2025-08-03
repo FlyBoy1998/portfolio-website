@@ -1,0 +1,23 @@
+.tippy-box {
+  color: $color-black;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.tippy-box[data-theme~="personal-profile"] {
+  background-color: $color-primary;
+}
+
+.tippy-box[data-theme~="personal-profile"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  color: $color-primary;
+}
+
+.tippy-box[data-theme~="student-profile"] {
+  background-color: $color-blue-light;
+}
+
+.tippy-box[data-theme~="student-profile"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  color: $color-blue-light;
+}

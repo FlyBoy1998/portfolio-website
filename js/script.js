@@ -14,12 +14,12 @@ function hideOffScreenNav() {
   offScreenNav.classList.remove("active");
 }
 
-function setTippyProps(element, theme) {
+function setTippyProps(element, theme, content) {
   tippy(element, {
-    content: "Personal GitHub",
+    content,
     placement: "bottom",
     animation: "shift-toward",
-    theme: theme,
+    theme,
   });
 }
 
@@ -29,8 +29,8 @@ function setTippyTooltips() {
     ".cta-buttons__github-student"
   );
 
-  setTippyProps(personalGitHubLink, "personal-profile");
-  setTippyProps(studentGitHubLink, "student-profile");
+  setTippyProps(personalGitHubLink, "personal-profile", "Personal GitHub");
+  setTippyProps(studentGitHubLink, "student-profile", "Student GitHub");
 }
 
 hamburgerBtn.addEventListener("click", displayOffScreenNav);

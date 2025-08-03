@@ -16,9 +16,11 @@
     &:nth-of-type(1) {
       color: $color-gray-light;
       font-style: italic;
+      animation: fadeUp 0.7s ease-out 0.2s forwards;
     }
     &:nth-of-type(2) {
       color: $color-gray;
+      animation: fadeUp 0.7s ease-out 0.4s forwards;
 
       @include respond(phone-port) {
         width: 75% !important;
@@ -29,6 +31,7 @@
   .heading {
     color: $color-white;
     z-index: 1;
+    animation: fadeUp 0.7s ease-out 0.3s forwards;
 
     &::before {
       content: "";
@@ -66,6 +69,7 @@
       padding-right: 2.2rem;
       font-family: "Orbitron", sans-serif;
       font-weight: 700;
+      animation: fadeUp 0.7s ease-out 0.5s forwards;
 
       &:hover {
         transform: scale(1.1);
@@ -90,9 +94,14 @@
       }
     }
 
+    &__github {
+      animation: fadeUp 0.7s ease-out 0.6s forwards;
+    }
+
     &__github-student {
       border-color: $color-blue-light;
       color: $color-blue-light;
+      animation: fadeUp 0.7s ease-out 0.7s forwards;
 
       &:hover,
       &:active {

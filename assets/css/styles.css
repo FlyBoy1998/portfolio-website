@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.fade-up-initial {
+  transform: translateY(35%);
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(35%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 #finisher-canvas {
   background-color: rgba(0, 0, 0, 0) !important;
   z-index: 0 !important;
@@ -87,6 +102,7 @@ h6 {
   color: #f5f5f5;
   font-family: "Orbitron", sans-serif;
   transition: color 0.25s ease-out;
+  animation: fadeUp 0.7s ease-out forwards;
 }
 .navbar__logo span {
   color: #ffb428;
@@ -97,6 +113,7 @@ h6 {
 .navbar__links {
   gap: 2.4rem;
   border-bottom: 2px solid transparent;
+  animation: fadeUp 0.7s ease-out 0.1s forwards;
 }
 .navbar__links .hire-me-btn {
   background-color: #ffb428;
@@ -248,9 +265,11 @@ h6 {
 .header p:nth-of-type(1) {
   color: #bdbdbd;
   font-style: italic;
+  animation: fadeUp 0.7s ease-out 0.2s forwards;
 }
 .header p:nth-of-type(2) {
   color: #919191;
+  animation: fadeUp 0.7s ease-out 0.4s forwards;
 }
 @media only screen and (max-width: 36em) {
   .header p:nth-of-type(2) {
@@ -260,6 +279,7 @@ h6 {
 .header .heading {
   color: #f5f5f5;
   z-index: 1;
+  animation: fadeUp 0.7s ease-out 0.3s forwards;
 }
 .header .heading::before {
   content: "";
@@ -292,6 +312,7 @@ h6 {
   padding-right: 2.2rem;
   font-family: "Orbitron", sans-serif;
   font-weight: 700;
+  animation: fadeUp 0.7s ease-out 0.5s forwards;
 }
 .header .cta-buttons__download-cv:hover {
   transform: scale(1.1);
@@ -310,9 +331,13 @@ h6 {
 .header .cta-buttons__github:active, .header .cta-buttons__github-student:active {
   transform: scale(1.1);
 }
+.header .cta-buttons__github {
+  animation: fadeUp 0.7s ease-out 0.6s forwards;
+}
 .header .cta-buttons__github-student {
   border-color: #2cc3ff;
   color: #2cc3ff;
+  animation: fadeUp 0.7s ease-out 0.7s forwards;
 }
 .header .cta-buttons__github-student:hover, .header .cta-buttons__github-student:active {
   background-color: #2cc3ff;

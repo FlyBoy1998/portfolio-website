@@ -8,6 +8,7 @@
     color: $color-white;
     font-family: "Orbitron", sans-serif;
     transition: color 0.25s ease-out;
+    animation: fadeUp 0.7s ease-out forwards;
 
     span {
       color: $color-primary;
@@ -22,6 +23,7 @@
   &__links {
     gap: 2.4rem;
     border-bottom: 2px solid transparent;
+    animation: fadeUp 0.7s ease-out 0.1s forwards;
 
     .hire-me-btn {
       background-color: $color-primary;

@@ -65,6 +65,7 @@
     width: 3rem;
     height: 2.4rem;
     background-color: transparent;
+    animation: fadeUp 0.7s ease-out 0.1s forwards;
 
     @include respond(tab-port) {
       display: block !important;

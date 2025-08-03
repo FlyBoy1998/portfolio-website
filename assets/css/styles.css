@@ -1,4 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.tippy-box {
+  color: #101010;
+  padding: 0.5rem;
+  font-weight: 800;
+  font-family: "Orbitron", sans-serif;
+}
+
+.tippy-box[data-theme~=personal-profile] {
+  background-color: #ffb428;
+}
+
+.tippy-box[data-theme~=personal-profile][data-placement^=bottom] > .tippy-arrow::before {
+  color: #ffb428;
+}
+
+.tippy-box[data-theme~=student-profile] {
+  background-color: #2cc3ff;
+}
+
+.tippy-box[data-theme~=student-profile][data-placement^=bottom] > .tippy-arrow::before {
+  color: #2cc3ff;
+}
+
 *,
 *::before,
 *::after {
@@ -247,6 +270,8 @@ h6 {
   border-radius: 2rem;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
 }
 .header .cta-buttons__download-cv:hover {
   transform: scale(1.1);

@@ -7,4 +7,24 @@ function displayOffScreenNav() {
   offScreenNav.classList.add("active");
 }
 
+function setTippyProps(element, theme) {
+  tippy(element, {
+    content: "Personal GitHub",
+    placement: "bottom",
+    animation: "shift-toward",
+    theme: theme,
+  });
+}
+
+function setTippyTooltips() {
+  const personalGitHubLink = document.querySelector(".cta-buttons__github");
+  const studentGitHubLink = document.querySelector(
+    ".cta-buttons__github-student"
+  );
+
+  setTippyProps(personalGitHubLink, "personal-profile");
+  setTippyProps(studentGitHubLink, "student-profile");
+}
+
 hamburgerBtn.addEventListener("click", displayOffScreenNav);
+setTippyTooltips();

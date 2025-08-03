@@ -20,6 +20,7 @@
   "homepage": "https://github.com/FlyBoy1998/portfolio-website#readme",
   "dependencies": {
     "bootstrap": "^5.3.7",
-    "sass": "^1.89.2"
+    "sass": "^1.89.2",
+    "tippy.js": "^6.3.7"
   }
 }

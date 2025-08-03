@@ -1,11 +1,10 @@
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const offScreenNav = document.getElementById("off-screen-nav");
 
-function toggleOffScreenNav() {
-  const isExpanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
-  hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
+function displayOffScreenNav() {
+  hamburgerBtn.setAttribute("aria-expanded", true);
 
-  offScreenNav.classList.toggle("active");
+  offScreenNav.classList.add("active");
 }
 
-hamburgerBtn.addEventListener("click", toggleOffScreenNav);
+hamburgerBtn.addEventListener("click", displayOffScreenNav);

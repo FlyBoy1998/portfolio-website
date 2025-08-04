@@ -302,7 +302,7 @@ h6 {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to right, #d18a06, #101010);
+  background: linear-gradient(to right, #d18a06, #101010 60%);
   filter: blur(1rem);
 }
 .header .cta-buttons {

@@ -38,7 +38,11 @@
       position: absolute;
       inset: 0;
       z-index: -1;
-      background: linear-gradient(to right, $color-primary-dark, $color-black);
+      background: linear-gradient(
+        to right,
+        $color-primary-dark,
+        $color-black 60%
+      );
       filter: blur(1rem);
     }
   }

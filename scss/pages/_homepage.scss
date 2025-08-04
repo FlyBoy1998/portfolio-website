@@ -25,74 +25,77 @@
     }
   }
 
-  .heading {
-    color: $color-white;
-    z-index: 1;
-    animation: fadeUp 0.7s ease-out 0.3s forwards;
+  .container {
+    z-index: 2;
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background: linear-gradient(
-        to right,
-        $color-primary-dark,
-        $color-black 60%
-      );
-      filter: blur(1rem);
-    }
-  }
+    .homepage-heading {
+      color: $color-white;
+      animation: fadeUp 0.7s ease-out 0.3s forwards;
 
-  .cta-buttons {
-    gap: 1.4rem;
-
-    & > * {
-      cursor: pointer;
-      outline: none;
-      background-color: transparent;
-      border: 2px solid $color-primary;
-      color: $color-primary;
-      padding: 1rem;
-      z-index: 1;
-      transition: all 0.15s ease-out;
-
-      &:not(:last-child):hover,
-      &:not(:last-child):active {
-        background-color: $color-primary;
-        color: $color-white;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(
+          to right,
+          $color-primary-dark,
+          $color-black 60%
+        );
+        filter: blur(1rem);
       }
     }
 
-    &__download-cv {
-      border-radius: 2rem;
-      padding-left: 2.2rem;
-      padding-right: 2.2rem;
-      font-family: "Orbitron", sans-serif;
-      font-weight: 700;
-      animation: fadeUp 0.7s ease-out 0.5s forwards;
-    }
+    .cta-buttons {
+      gap: 1.4rem;
 
-    &__github,
-    &__github-student {
-      min-width: 3.25rem;
-      min-height: 3.25rem;
-      border-radius: 50%;
-    }
+      & > * {
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+        padding: 1rem;
+        z-index: 1;
+        transition: all 0.15s ease-out;
 
-    &__github {
-      animation: fadeUp 0.7s ease-out 0.6s forwards;
-    }
+        &:not(:last-child):hover,
+        &:not(:last-child):active {
+          background-color: $color-primary;
+          color: $color-white;
+        }
+      }
 
-    &__github-student {
-      border-color: $color-blue-light;
-      color: $color-blue-light;
-      animation: fadeUp 0.7s ease-out 0.7s forwards;
+      &__download-cv {
+        border-radius: 2rem;
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+        animation: fadeUp 0.7s ease-out 0.5s forwards;
+      }
 
-      &:hover,
-      &:active {
-        background-color: $color-blue-light;
-        color: $color-white;
+      &__github,
+      &__github-student {
+        min-width: 3.25rem;
+        min-height: 3.25rem;
+        border-radius: 50%;
+      }
+
+      &__github {
+        animation: fadeUp 0.7s ease-out 0.6s forwards;
+      }
+
+      &__github-student {
+        border-color: $color-blue-light;
+        color: $color-blue-light;
+        animation: fadeUp 0.7s ease-out 0.7s forwards;
+
+        &:hover,
+        &:active {
+          background-color: $color-blue-light;
+          color: $color-white;
+        }
       }
     }
   }

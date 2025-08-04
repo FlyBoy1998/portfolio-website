@@ -432,12 +432,14 @@ h6 {
     width: 75% !important;
   }
 }
-.homepage-header .heading {
+.homepage-header .container {
+  z-index: 2;
+}
+.homepage-header .container .homepage-heading {
   color: #f5f5f5;
-  z-index: 1;
   animation: fadeUp 0.7s ease-out 0.3s forwards;
 }
-.homepage-header .heading::before {
+.homepage-header .container .homepage-heading::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -445,10 +447,10 @@ h6 {
   background: linear-gradient(to right, #d18a06, #101010 60%);
   filter: blur(1rem);
 }
-.homepage-header .cta-buttons {
+.homepage-header .container .cta-buttons {
   gap: 1.4rem;
 }
-.homepage-header .cta-buttons > * {
+.homepage-header .container .cta-buttons > * {
   cursor: pointer;
   outline: none;
   background-color: transparent;
@@ -458,11 +460,11 @@ h6 {
   z-index: 1;
   transition: all 0.15s ease-out;
 }
-.homepage-header .cta-buttons > *:not(:last-child):hover, .homepage-header .cta-buttons > *:not(:last-child):active {
+.homepage-header .container .cta-buttons > *:not(:last-child):hover, .homepage-header .container .cta-buttons > *:not(:last-child):active {
   background-color: #ffb428;
   color: #f5f5f5;
 }
-.homepage-header .cta-buttons__download-cv {
+.homepage-header .container .cta-buttons__download-cv {
   border-radius: 2rem;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
@@ -470,20 +472,20 @@ h6 {
   font-weight: 700;
   animation: fadeUp 0.7s ease-out 0.5s forwards;
 }
-.homepage-header .cta-buttons__github, .homepage-header .cta-buttons__github-student {
+.homepage-header .container .cta-buttons__github, .homepage-header .container .cta-buttons__github-student {
   min-width: 3.25rem;
   min-height: 3.25rem;
   border-radius: 50%;
 }
-.homepage-header .cta-buttons__github {
+.homepage-header .container .cta-buttons__github {
   animation: fadeUp 0.7s ease-out 0.6s forwards;
 }
-.homepage-header .cta-buttons__github-student {
+.homepage-header .container .cta-buttons__github-student {
   border-color: #2cc3ff;
   color: #2cc3ff;
   animation: fadeUp 0.7s ease-out 0.7s forwards;
 }
-.homepage-header .cta-buttons__github-student:hover, .homepage-header .cta-buttons__github-student:active {
+.homepage-header .container .cta-buttons__github-student:hover, .homepage-header .container .cta-buttons__github-student:active {
   background-color: #2cc3ff;
   color: #f5f5f5;
 }

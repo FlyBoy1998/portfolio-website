@@ -31,6 +31,42 @@
   }
 }
 
+@mixin navbar-theme($theme-color) {
+  .navbar__logo {
+    span {
+      color: $theme-color;
+    }
+
+    &:hover,
+    &:active {
+      color: $theme-color;
+    }
+  }
+
+  .navbar__links {
+    .hire-me-btn {
+      background-color: $theme-color;
+
+      &:hover,
+      &:active {
+        color: $color-white;
+      }
+    }
+
+    &--link {
+      &:hover,
+      &:active {
+        color: $theme-color;
+      }
+
+      &.active {
+        color: $theme-color;
+        border-bottom: 2px solid $theme-color;
+      }
+    }
+  }
+}
+
 @mixin off-screen-nav($page, $theme-color: $color-primary) {
   @if $page == homepage {
     $theme-color: $color-primary;

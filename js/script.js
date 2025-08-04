@@ -1,3 +1,4 @@
+const page = document.body.dataset.page;
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const offScreenNav = document.getElementById("off-screen-nav");
 const offScreenNavCloseBtn = document.querySelector(
@@ -43,13 +44,14 @@ function setTippyProps(element, theme, content) {
 }
 
 function setTippyTooltips() {
-  const personalGitHubLink = document.querySelector(".cta-buttons__github");
-  const studentGitHubLink = document.querySelector(
-    ".cta-buttons__github-student"
-  );
-
-  setTippyProps(personalGitHubLink, "personal-profile", "Personal GitHub");
-  setTippyProps(studentGitHubLink, "student-profile", "Student GitHub");
+  if (page === "homepage") {
+    const personalGitHubLink = document.querySelector(".cta-buttons__github");
+    const studentGitHubLink = document.querySelector(
+      ".cta-buttons__github-student"
+    );
+    setTippyProps(personalGitHubLink, "personal-profile", "Personal GitHub");
+    setTippyProps(studentGitHubLink, "student-profile", "Student GitHub");
+  }
 }
 
 hamburgerBtn.addEventListener("click", displayOffScreenNav);

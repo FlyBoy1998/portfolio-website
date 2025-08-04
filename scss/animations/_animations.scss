@@ -3,11 +3,28 @@
   opacity: 0;
 }
 
+.fade-left-initial {
+  transform: translateX(35%);
+  opacity: 0;
+}
+
 @keyframes fadeUp {
   0% {
     transform: translateY(35%);
     opacity: 0;
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(35%);
+    opacity: 0;
+  }
+
   100% {
     transform: translateX(0);
     opacity: 1;

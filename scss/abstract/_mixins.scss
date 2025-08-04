@@ -74,12 +74,11 @@ $theme-colors: (
   }
 }
 
-@mixin off-screen-nav($page, $theme-color: $color-primary) {
-  @if $page == homepage {
+@mixin off-screen-nav($page) {
+  $theme-color: map-get($theme-colors, $page);
+
+  @if $theme-color == null {
     $theme-color: $color-primary;
-  }
-  @if $page == resume {
-    $theme-color: $color-blue-light;
   }
 
   background-color: $color-black;

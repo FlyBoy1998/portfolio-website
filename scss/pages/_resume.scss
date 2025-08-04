@@ -12,6 +12,7 @@
 
     .resume-heading {
       color: $color-white;
+      animation: fadeUp 0.7s ease-out 0.3s forwards;
 
       &::before {
         content: "";
@@ -21,10 +22,24 @@
         background: linear-gradient(
           to right,
           $color-secondary-dark,
-          $color-black 60%
+          transparent 60%
         );
         filter: blur(1rem);
       }
     }
+
+    .resume-subtext {
+      color: $color-gray;
+      letter-spacing: 1.1px;
+      animation: fadeUp 0.7s ease-out 0.4s forwards;
+
+      &__highlight {
+        color: $color-secondary;
+      }
+    }
   }
+}
+
+.typed-cursor {
+  color: $color-white;
 }

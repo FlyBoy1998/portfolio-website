@@ -70,13 +70,6 @@
       font-family: "Orbitron", sans-serif;
       font-weight: 700;
       animation: fadeUp 0.7s ease-out 0.5s forwards;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-      &:active {
-        transform: scale(1.05);
-      }
     }
 
     &__github,
@@ -84,14 +77,6 @@
       min-width: 3.25rem;
       min-height: 3.25rem;
       border-radius: 50%;
-
-      &:hover {
-        transform: scale(1.15);
-      }
-
-      &:active {
-        transform: scale(1.1);
-      }
     }
 
     &__github {

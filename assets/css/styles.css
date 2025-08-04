@@ -4,9 +4,24 @@
   opacity: 0;
 }
 
+.fade-left-initial {
+  transform: translateX(35%);
+  opacity: 0;
+}
+
 @keyframes fadeUp {
   0% {
     transform: translateY(35%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(35%);
     opacity: 0;
   }
   100% {
@@ -315,22 +330,10 @@ h6 {
   font-weight: 700;
   animation: fadeUp 0.7s ease-out 0.5s forwards;
 }
-.header .cta-buttons__download-cv:hover {
-  transform: scale(1.1);
-}
-.header .cta-buttons__download-cv:active {
-  transform: scale(1.05);
-}
 .header .cta-buttons__github, .header .cta-buttons__github-student {
   min-width: 3.25rem;
   min-height: 3.25rem;
   border-radius: 50%;
-}
-.header .cta-buttons__github:hover, .header .cta-buttons__github-student:hover {
-  transform: scale(1.15);
-}
-.header .cta-buttons__github:active, .header .cta-buttons__github-student:active {
-  transform: scale(1.1);
 }
 .header .cta-buttons__github {
   animation: fadeUp 0.7s ease-out 0.6s forwards;

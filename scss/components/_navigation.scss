@@ -9,15 +9,6 @@
     font-family: "Orbitron", sans-serif;
     transition: color 0.25s ease-out;
     animation: fadeUp 0.7s ease-out forwards;
-
-    span {
-      color: $color-primary;
-    }
-
-    &:hover,
-    &:active {
-      color: $color-primary;
-    }
   }
 
   &__links {
@@ -26,7 +17,6 @@
     animation: fadeUp 0.7s ease-out 0.1s forwards;
 
     .hire-me-btn {
-      background-color: $color-primary;
       padding: 3.2rem 2rem;
       border-radius: 2rem;
       color: $color-black;
@@ -43,16 +33,6 @@
       transition: all 0.25s ease-out;
       font-family: "Orbitron", sans-serif;
       font-weight: 600;
-
-      &:hover,
-      &:active {
-        color: $color-primary;
-      }
-
-      &.active {
-        color: $color-primary;
-        border-bottom: 2px solid $color-primary;
-      }
     }
 
     @include respond(tab-port) {
@@ -147,7 +127,6 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-color: $color-primary-dark;
       z-index: -1;
       border-radius: inherit;
       filter: blur(1rem);

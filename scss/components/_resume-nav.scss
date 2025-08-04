@@ -1,0 +1,7 @@
+.resume-navbar {
+  @include navbar-theme($color-blue-light);
+}
+
+.off-screen-nav-resume {
+  @include off-screen-nav(resume);
+}

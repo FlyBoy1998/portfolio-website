@@ -38,7 +38,13 @@ $theme-colors: (
   }
 }
 
-@mixin navbar-theme($theme-color) {
+@mixin navbar-theme($page) {
+  $theme-color: map-get($theme-colors, $page);
+
+  @if $theme-color == null {
+    $theme-color: $color-primary;
+  }
+
   .navbar__logo {
     span {
       color: $theme-color;

@@ -263,7 +263,7 @@ h6 {
   box-shadow: 1px 2px 10px 3px #d18a06;
 }
 
-.header {
+.homepage-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/earth-tech.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -271,33 +271,33 @@ h6 {
   overflow: hidden;
 }
 @media only screen and (max-width: 62em) and (orientation: landscape) {
-  .header {
+  .homepage-header {
     padding: 6rem 0;
   }
 }
-.header p {
+.homepage-header p {
   letter-spacing: 1.1px;
 }
-.header p:nth-of-type(1) {
+.homepage-header p:nth-of-type(1) {
   color: #bdbdbd;
   font-style: italic;
   animation: fadeUp 0.7s ease-out 0.2s forwards;
 }
-.header p:nth-of-type(2) {
+.homepage-header p:nth-of-type(2) {
   color: #919191;
   animation: fadeUp 0.7s ease-out 0.4s forwards;
 }
 @media only screen and (max-width: 36em) {
-  .header p:nth-of-type(2) {
+  .homepage-header p:nth-of-type(2) {
     width: 75% !important;
   }
 }
-.header .heading {
+.homepage-header .heading {
   color: #f5f5f5;
   z-index: 1;
   animation: fadeUp 0.7s ease-out 0.3s forwards;
 }
-.header .heading::before {
+.homepage-header .heading::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -305,10 +305,10 @@ h6 {
   background: linear-gradient(to right, #d18a06, #101010 60%);
   filter: blur(1rem);
 }
-.header .cta-buttons {
+.homepage-header .cta-buttons {
   gap: 1.4rem;
 }
-.header .cta-buttons > * {
+.homepage-header .cta-buttons > * {
   cursor: pointer;
   outline: none;
   background-color: transparent;
@@ -318,11 +318,11 @@ h6 {
   z-index: 1;
   transition: all 0.15s ease-out;
 }
-.header .cta-buttons > *:not(:last-child):hover, .header .cta-buttons > *:not(:last-child):active {
+.homepage-header .cta-buttons > *:not(:last-child):hover, .homepage-header .cta-buttons > *:not(:last-child):active {
   background-color: #ffb428;
   color: #f5f5f5;
 }
-.header .cta-buttons__download-cv {
+.homepage-header .cta-buttons__download-cv {
   border-radius: 2rem;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
@@ -330,20 +330,20 @@ h6 {
   font-weight: 700;
   animation: fadeUp 0.7s ease-out 0.5s forwards;
 }
-.header .cta-buttons__github, .header .cta-buttons__github-student {
+.homepage-header .cta-buttons__github, .homepage-header .cta-buttons__github-student {
   min-width: 3.25rem;
   min-height: 3.25rem;
   border-radius: 50%;
 }
-.header .cta-buttons__github {
+.homepage-header .cta-buttons__github {
   animation: fadeUp 0.7s ease-out 0.6s forwards;
 }
-.header .cta-buttons__github-student {
+.homepage-header .cta-buttons__github-student {
   border-color: #2cc3ff;
   color: #2cc3ff;
   animation: fadeUp 0.7s ease-out 0.7s forwards;
 }
-.header .cta-buttons__github-student:hover, .header .cta-buttons__github-student:active {
+.homepage-header .cta-buttons__github-student:hover, .homepage-header .cta-buttons__github-student:active {
   background-color: #2cc3ff;
   color: #f5f5f5;
 }

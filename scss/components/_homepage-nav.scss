@@ -1,0 +1,7 @@
+.homepage-navbar {
+  @include navbar-theme($color-primary);
+}
+
+.off-screen-nav-homepage {
+  @include off-screen-nav(homepage);
+}

@@ -87,13 +87,13 @@
       }
 
       &__github-student {
-        border-color: $color-blue-light;
-        color: $color-blue-light;
+        border-color: $color-secondary;
+        color: $color-secondary;
         animation: fadeUp 0.7s ease-out 0.7s forwards;
 
         &:hover,
         &:active {
-          background-color: $color-blue-light;
+          background-color: $color-secondary;
           color: $color-white;
         }
       }

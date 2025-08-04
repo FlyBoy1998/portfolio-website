@@ -15,10 +15,10 @@
 }
 
 .tippy-box[data-theme~="student-profile"] {
-  background-color: $color-blue-light;
+  background-color: $color-secondary;
 }
 
 .tippy-box[data-theme~="student-profile"][data-placement^="bottom"]
   > .tippy-arrow::before {
-  color: $color-blue-light;
+  color: $color-secondary;
 }

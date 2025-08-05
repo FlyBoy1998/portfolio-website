@@ -7,47 +7,65 @@
     padding: 6rem 0;
   }
 
-  .container {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "text-content tab-content"
+      "tab-buttons tab-content";
+    grid-auto-columns: 1fr;
+    column-gap: 1rem;
     z-index: 2;
 
-    .resume-heading {
-      color: $color-white;
-      animation: fadeUp 0.7s ease-out 0.3s forwards;
+    // @include respond(tab-port) {
+    //   grid-template-areas:
+    //     "text-content"
+    //     "tab-buttons"
+    //     "tab-content";
+    // }
 
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: linear-gradient(
-          to right,
-          $color-secondary-dark,
-          transparent 60%
-        );
-        filter: blur(1rem);
+    .text-content {
+      grid-area: text-content;
+
+      .resume-heading {
+        color: $color-white;
+        animation: fadeUp 0.7s ease-out 0.3s forwards;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: -1;
+          background: linear-gradient(
+            to right,
+            $color-secondary-dark,
+            transparent 60%
+          );
+          filter: blur(1rem);
+        }
       }
-    }
 
-    .resume-subtext {
-      color: $color-gray;
-      letter-spacing: 1.1px;
-      animation: fadeUp 0.7s ease-out 0.4s forwards;
+      .resume-subtext {
+        color: $color-gray;
+        letter-spacing: 1.1px;
+        animation: fadeUp 0.7s ease-out 0.4s forwards;
 
-      &__highlight {
-        color: $color-secondary;
+        &__highlight {
+          color: $color-secondary;
+        }
       }
     }
 
     .tab-buttons {
+      grid-area: tab-buttons;
       gap: 1.4rem;
 
       & > * {
         cursor: pointer;
         background-color: transparent;
-        padding: 1rem 2.2rem;
+        padding: 0.8rem 2rem;
         outline: none;
         border: 2px solid $color-secondary-dark;
-        width: 14rem;
+        width: 11rem;
         max-width: 20rem;
         border-radius: 2rem;
         color: $color-secondary;
@@ -80,6 +98,25 @@
       }
       &__button:nth-of-type(3) {
         animation: fadeUp 0.7s ease-out 0.7s forwards;
+      }
+    }
+
+    .tab-content {
+      grid-area: tab-content;
+      backdrop-filter: blur(1rem) brightness(40%);
+      border-radius: 1rem;
+      overflow-y: auto;
+
+      & > * {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      h3 {
+        color: $color-secondary;
       }
     }
   }

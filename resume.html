@@ -38,7 +38,7 @@
       <nav class="navbar resume-navbar w-100 position-fixed top-0">
         <div class="container">
           <a
-            class="navbar__logo fade-up-initial text-decoration-none text-uppercase fs-2 fw-bold"
+            class="navbar__logo fade-up-initial text-decoration-none text-uppercase fs-1 fw-bold"
             href="#"
             >Florin <span>.</span></a
           >
@@ -137,7 +137,7 @@
         </ul>
       </nav>
 
-      <div class="container position-relative">
+      <div class="grid-container container position-relative">
         <div
           class="text-content d-flex flex-column align-items-center align-items-sm-start mb-5"
         >
@@ -153,11 +153,26 @@
         <div
           class="tab-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start"
         >
-          <button class="tab-buttons__button active fade-up-initial">
+          <button class="tab-buttons__button active fade-up-initial fs-5">
             Education
           </button>
-          <button class="tab-buttons__button fade-up-initial">Skills</button>
-          <button class="tab-buttons__button fade-up-initial">About Me</button>
+          <button class="tab-buttons__button fade-up-initial fs-5">
+            Skills
+          </button>
+          <button class="tab-buttons__button fade-up-initial fs-5">
+            About Me
+          </button>
+        </div>
+        <div class="tab-content p-3">
+          <div class="tab-content__education active">
+            <h3 class="fs-2">Education</h3>
+          </div>
+          <div class="tab-content__skills">
+            <h3 class="fs-2">Skills</h3>
+          </div>
+          <div class="tab-content__about-me">
+            <h3 class="fs-2">About me</h3>
+          </div>
         </div>
       </div>
     </header>

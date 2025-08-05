@@ -37,6 +37,51 @@
         color: $color-secondary;
       }
     }
+
+    .tab-buttons {
+      gap: 1.4rem;
+
+      & > * {
+        cursor: pointer;
+        background-color: transparent;
+        padding: 1rem 2.2rem;
+        outline: none;
+        border: 2px solid $color-secondary-dark;
+        width: 14rem;
+        max-width: 20rem;
+        border-radius: 2rem;
+        color: $color-secondary;
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+        transition: all 0.15s ease-out;
+
+        @include respond(phone-port) {
+          width: 24rem;
+          max-width: 30rem;
+        }
+
+        &:hover,
+        &:active {
+          background-color: $color-secondary-dark;
+          color: $color-white;
+        }
+      }
+
+      &__button.active {
+        background-color: $color-secondary-dark;
+        color: $color-white;
+      }
+
+      &__button:nth-of-type(1) {
+        animation: fadeUp 0.7s ease-out 0.5s forwards;
+      }
+      &__button:nth-of-type(2) {
+        animation: fadeUp 0.7s ease-out 0.6s forwards;
+      }
+      &__button:nth-of-type(3) {
+        animation: fadeUp 0.7s ease-out 0.7s forwards;
+      }
+    }
   }
 }
 

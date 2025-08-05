@@ -448,7 +448,7 @@ h6 {
   filter: blur(1rem);
 }
 .homepage-header .container .cta-buttons {
-  gap: 1.4rem;
+  gap: 1rem;
 }
 .homepage-header .container .cta-buttons > * {
   cursor: pointer;
@@ -530,7 +530,7 @@ h6 {
 }
 .resume-header .grid-container .tab-buttons {
   grid-area: tab-buttons;
-  gap: 1.4rem;
+  gap: 1rem;
 }
 .resume-header .grid-container .tab-buttons > * {
   cursor: pointer;

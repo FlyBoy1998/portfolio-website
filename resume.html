@@ -137,40 +137,42 @@
         </ul>
       </nav>
 
-      <div class="grid-container container position-relative">
+      <div
+        class="flex-container container d-flex align-items-start position-relative"
+      >
         <section
-          class="text-content d-flex flex-column align-items-center align-items-sm-start mb-5"
+          class="main-content d-flex flex-column align-items-center align-items-sm-start mb-5"
         >
           <h1
             class="resume-heading fade-up-initial d-inline-block position-relative p-2 mb-4 display-4 fw-bold"
           >
             Why hire me?
           </h1>
-          <p class="resume-subtext fade-up-initial">
+          <p class="resume-subtext fade-up-initial mb-5">
             I am a <span class="resume-subtext__highlight"></span>
           </p>
-        </section>
-        <div
-          class="tab-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start"
-        >
-          <button class="tab-buttons__button active fade-up-initial fs-5">
-            Skills
-          </button>
-          <button class="tab-buttons__button fade-up-initial fs-5">
-            About Me
-          </button>
-        </div>
-        <section class="tab-content p-4">
-          <div class="tab-content__skills">
-            <h2 class="fs-2">Skills</h2>
+          <div
+            class="tab-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start"
+          >
+            <button class="tab-buttons__button active fade-up-initial fs-5">
+              About Me
+            </button>
+            <button class="tab-buttons__button fade-up-initial fs-5">
+              Skills
+            </button>
           </div>
-          <div class="tab-content__about-me active">
-            <h2 class="fs-2">About me</h2>
-            <p class="lead text-white">
+        </section>
+        <section class="tab-content p-4">
+          <div class="tab-content__tab active">
+            <h2 class="tab-content__tab--heading fs-2 mb-3">About me</h2>
+            <p class="lead lh-lg text-white tab-content__tab--lead-paragraph">
               With over 6 years of experience as a Special Actions Service
               prison officer, I have extensive experience working in a team and
               highly developed attention to detail.
             </p>
+          </div>
+          <div class="tab-content__tab">
+            <h2 class="tab-content__tab--heading fs-2 mb-3">Skills</h2>
           </div>
         </section>
       </div>

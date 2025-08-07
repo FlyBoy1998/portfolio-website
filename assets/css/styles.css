@@ -415,31 +415,31 @@ h6 {
     padding: 6rem 0;
   }
 }
-.homepage-header p {
+.homepage-header .main-content {
+  z-index: 2;
+}
+.homepage-header .main-content p {
   letter-spacing: 1.1px;
 }
-.homepage-header p:nth-of-type(1) {
+.homepage-header .main-content p:nth-of-type(1) {
   color: #bdbdbd;
   font-style: italic;
   animation: fadeUp 0.7s ease-out 0.2s forwards;
 }
-.homepage-header p:nth-of-type(2) {
+.homepage-header .main-content p:nth-of-type(2) {
   color: #919191;
   animation: fadeUp 0.7s ease-out 0.4s forwards;
 }
 @media only screen and (max-width: 36em) {
-  .homepage-header p:nth-of-type(2) {
+  .homepage-header .main-content p:nth-of-type(2) {
     width: 75% !important;
   }
 }
-.homepage-header .container {
-  z-index: 2;
-}
-.homepage-header .container .homepage-heading {
+.homepage-header .main-content .homepage-heading {
   color: #f5f5f5;
   animation: fadeUp 0.7s ease-out 0.3s forwards;
 }
-.homepage-header .container .homepage-heading::before {
+.homepage-header .main-content .homepage-heading::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -447,10 +447,10 @@ h6 {
   background: linear-gradient(to right, #d18a06, transparent 60%);
   filter: blur(1rem);
 }
-.homepage-header .container .cta-buttons {
+.homepage-header .main-content .cta-buttons {
   gap: 1rem;
 }
-.homepage-header .container .cta-buttons > * {
+.homepage-header .main-content .cta-buttons > * {
   cursor: pointer;
   outline: none;
   background-color: transparent;
@@ -460,11 +460,11 @@ h6 {
   z-index: 1;
   transition: all 0.15s ease-out;
 }
-.homepage-header .container .cta-buttons > *:not(:last-child):hover, .homepage-header .container .cta-buttons > *:not(:last-child):active {
+.homepage-header .main-content .cta-buttons > *:not(:last-child):hover, .homepage-header .main-content .cta-buttons > *:not(:last-child):active {
   background-color: #ffb428;
   color: #f5f5f5;
 }
-.homepage-header .container .cta-buttons__download-cv {
+.homepage-header .main-content .cta-buttons__download-cv {
   border-radius: 2rem;
   padding-left: 2.2rem;
   padding-right: 2.2rem;
@@ -472,20 +472,20 @@ h6 {
   font-weight: 700;
   animation: fadeUp 0.7s ease-out 0.5s forwards;
 }
-.homepage-header .container .cta-buttons__github, .homepage-header .container .cta-buttons__github-student {
+.homepage-header .main-content .cta-buttons__github, .homepage-header .main-content .cta-buttons__github-student {
   min-width: 3.25rem;
   min-height: 3.25rem;
   border-radius: 50%;
 }
-.homepage-header .container .cta-buttons__github {
+.homepage-header .main-content .cta-buttons__github {
   animation: fadeUp 0.7s ease-out 0.6s forwards;
 }
-.homepage-header .container .cta-buttons__github-student {
+.homepage-header .main-content .cta-buttons__github-student {
   border-color: #2cc3ff;
   color: #2cc3ff;
   animation: fadeUp 0.7s ease-out 0.7s forwards;
 }
-.homepage-header .container .cta-buttons__github-student:hover, .homepage-header .container .cta-buttons__github-student:active {
+.homepage-header .main-content .cta-buttons__github-student:hover, .homepage-header .main-content .cta-buttons__github-student:active {
   background-color: #2cc3ff;
   color: #f5f5f5;
 }

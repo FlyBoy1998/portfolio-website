@@ -7,26 +7,26 @@
     padding: 6rem 0;
   }
 
-  p {
-    letter-spacing: 1.1px;
+  .main-content {
+    z-index: 2;
 
-    &:nth-of-type(1) {
-      color: $color-gray-light;
-      font-style: italic;
-      animation: fadeUp 0.7s ease-out 0.2s forwards;
-    }
-    &:nth-of-type(2) {
-      color: $color-gray;
-      animation: fadeUp 0.7s ease-out 0.4s forwards;
+    p {
+      letter-spacing: 1.1px;
 
-      @include respond(phone-port) {
-        width: 75% !important;
+      &:nth-of-type(1) {
+        color: $color-gray-light;
+        font-style: italic;
+        animation: fadeUp 0.7s ease-out 0.2s forwards;
+      }
+      &:nth-of-type(2) {
+        color: $color-gray;
+        animation: fadeUp 0.7s ease-out 0.4s forwards;
+
+        @include respond(phone-port) {
+          width: 75% !important;
+        }
       }
     }
-  }
-
-  .container {
-    z-index: 2;
 
     .homepage-heading {
       color: $color-white;

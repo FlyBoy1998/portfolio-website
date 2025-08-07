@@ -29,7 +29,7 @@
     }
 
     .homepage-heading {
-      color: $color-white;
+      @extend %main-heading;
       animation: fadeUp 0.7s ease-out 0.3s forwards;
 
       &::before {

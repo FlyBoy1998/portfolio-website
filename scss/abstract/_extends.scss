@@ -4,3 +4,29 @@
   background-position: top;
   overflow: hidden;
 }
+
+%main-heading {
+  display: inline-block;
+  font-size: 4.5rem;
+  position: relative;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  color: $color-white;
+
+  @include respond(desktop-small) {
+    font-size: 4.5rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 4rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3.5rem;
+  }
+
+  @include respond(phone-port) {
+    font-size: 4rem;
+  }
+}

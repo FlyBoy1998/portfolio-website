@@ -5,16 +5,18 @@ function isMobileViewport() {
   return window.matchMedia("(max-width: 992px) and (pointer: coarse)").matches;
 }
 
-function setDynamicMargin() {
-  const headerTextContent = document.querySelector(".text-content");
+function setDynamicPadding() {
+  const header = document.querySelector("header");
 
   if (
     isMobileViewport() &&
     window.matchMedia("(orientation: landscape)").matches
   ) {
-    headerTextContent.style.marginTop = `${navbarHeight}px`;
+    header.style.paddingTop = `${navbarHeight}px`;
+    header.style.paddingBottom = `${navbarHeight}px`;
   } else {
-    headerTextContent.style.marginTop = "0px";
+    header.style.paddingTop = "0px";
+    header.style.paddingBottom = "0px";
   }
 }
 
@@ -26,7 +28,7 @@ function navbarScrollStyling() {
   }
 }
 
-window.addEventListener("DOMContentLoaded", setDynamicMargin);
-window.addEventListener("resize", setDynamicMargin);
-window.addEventListener("orientationchange", setDynamicMargin);
+window.addEventListener("DOMContentLoaded", setDynamicPadding);
+window.addEventListener("resize", setDynamicPadding);
+window.addEventListener("orientationchange", setDynamicPadding);
 window.addEventListener("scroll", navbarScrollStyling);

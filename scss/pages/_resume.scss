@@ -93,6 +93,7 @@
       backdrop-filter: blur(1rem) brightness(40%);
       border-radius: 1rem;
       overflow-y: auto;
+      animation: fadeUp 0.7s ease-out 0.8s forwards;
 
       &__tab {
         display: none;

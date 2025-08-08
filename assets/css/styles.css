@@ -37,7 +37,7 @@
 }
 
 .fade-up-initial {
-  transform: translateY(35%);
+  transform: translateY(2rem);
   opacity: 0;
 }
 
@@ -48,7 +48,7 @@
 
 @keyframes fadeUp {
   0% {
-    transform: translateY(35%);
+    transform: translateY(2rem);
     opacity: 0;
   }
   100% {
@@ -597,6 +597,7 @@ h6 {
   backdrop-filter: blur(1rem) brightness(40%);
   border-radius: 1rem;
   overflow-y: auto;
+  animation: fadeUp 0.7s ease-out 0.8s forwards;
 }
 .resume-header .flex-container .tab-content__tab {
   display: none;

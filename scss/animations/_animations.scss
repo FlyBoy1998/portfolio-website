@@ -1,5 +1,5 @@
 .fade-up-initial {
-  transform: translateY(35%);
+  transform: translateY(2rem);
   opacity: 0;
 }
 
@@ -10,7 +10,7 @@
 
 @keyframes fadeUp {
   0% {
-    transform: translateY(35%);
+    transform: translateY(2rem);
     opacity: 0;
   }
   100% {

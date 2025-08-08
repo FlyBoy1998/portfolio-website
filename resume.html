@@ -150,16 +150,22 @@
           <div
             class="tab-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start"
           >
-            <button class="tab-buttons__button active fade-up-initial fs-5">
+            <button
+              class="tab-buttons__button active fade-up-initial fs-5"
+              data-button-tab="about-me"
+            >
               About Me
             </button>
-            <button class="tab-buttons__button fade-up-initial fs-5">
+            <button
+              class="tab-buttons__button fade-up-initial fs-5"
+              data-button-tab="skills"
+            >
               Skills
             </button>
           </div>
         </section>
         <section class="tab-content p-4">
-          <div class="tab-content__tab active">
+          <div id="about-me" class="tab-content__tab active">
             <h2 class="tab-content__tab--heading fs-2 fw-bold mb-3">
               About me
             </h2>
@@ -169,7 +175,7 @@
               highly developed attention to detail.
             </p>
           </div>
-          <div class="tab-content__tab">
+          <div id="skills" class="tab-content__tab">
             <h2 class="tab-content__tab--heading fs-2 fw-bold mb-3">Skills</h2>
           </div>
         </section>

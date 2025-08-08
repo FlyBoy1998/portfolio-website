@@ -452,8 +452,7 @@ h6 {
   letter-spacing: 1.1px;
 }
 .homepage-header .main-content p:nth-of-type(1) {
-  color: #bdbdbd;
-  font-style: italic;
+  color: #ffc04a;
   animation: fadeUp 0.7s ease-out 0.2s forwards;
 }
 .homepage-header .main-content p:nth-of-type(2) {

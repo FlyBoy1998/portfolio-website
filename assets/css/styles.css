@@ -437,6 +437,18 @@ h6 {
   font-family: "Orbitron", sans-serif;
 }
 
+.scroller {
+  max-width: 100%;
+  overflow: hidden;
+}
+.scroller__inner {
+  gap: 2rem;
+}
+.scroller__inner--icon {
+  height: 6.4rem;
+  background-color: #7a7a7a;
+}
+
 .homepage-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/earth-tech.jpg");
 }

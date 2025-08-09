@@ -1,13 +1,38 @@
 .scroller {
   max-width: 100%;
-  overflow: hidden;
+
+  &[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      $color-white 20%,
+      $color-white 80%,
+      transparent
+    );
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      $color-white 20%,
+      $color-white 80%,
+      transparent
+    );
+
+    .scroller__inner {
+      overflow: hidden;
+      animation: scroll 30s linear infinite;
+      width: fit-content;
+    }
+  }
 
   &__inner {
-    gap: 2rem;
+    overflow-x: scroll;
+    gap: 1.4rem;
 
     &--icon {
-      height: 6.4rem;
-      background-color: $color-gray-dark;
+      height: 6rem;
+      background-color: $color-secondary-transparent;
+      border-radius: 1rem;
     }
   }
 }

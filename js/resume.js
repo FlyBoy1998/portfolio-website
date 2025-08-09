@@ -4,6 +4,7 @@ const resumeSubtextHighlight = document.querySelector(
 );
 const tabButtons = document.querySelectorAll(".tab-buttons__button");
 const tabContent = document.querySelectorAll(".tab-content__tab");
+const scroller = document.querySelector(".scroller");
 
 const typed = new Typed(resumeSubtextHighlight, {
   strings: [
@@ -39,4 +40,24 @@ function selectResumeTab() {
   });
 }
 
+function addScrollAnimation() {
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  if (!prefersReducedMotion) {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = document.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  }
+}
+
 selectResumeTab();
+addScrollAnimation();

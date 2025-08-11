@@ -23,5 +23,30 @@
       filter: brightness(0) saturate(100%) invert(71%) sepia(99%)
         saturate(1657%) hue-rotate(167deg) brightness(100%) contrast(103%);
     }
+
+    .modal-body .lead {
+      letter-spacing: 1.1px;
+      color: $color-white;
+    }
+
+    .technologies-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(6.875rem, 1fr));
+      gap: 3rem;
+
+      .technology {
+        height: fit-content;
+
+        &__icon {
+          height: 7rem;
+        }
+
+        &__name {
+          font-weight: 700;
+          color: $color-white;
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }

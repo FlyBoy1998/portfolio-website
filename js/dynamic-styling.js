@@ -5,13 +5,14 @@ function isMobileViewport() {
   return window.matchMedia("(max-width: 992px) and (pointer: coarse)").matches;
 }
 
+function isLandscape() {
+  return window.matchMedia("(orientation: landscape)").matches;
+}
+
 function setDynamicPadding() {
   const header = document.querySelector("header");
 
-  if (
-    isMobileViewport() &&
-    window.matchMedia("(orientation: landscape)").matches
-  ) {
+  if (isMobileViewport() && isLandscape()) {
     header.style.paddingTop = `${navbarHeight}px`;
     header.style.paddingBottom = `${navbarHeight}px`;
   } else {

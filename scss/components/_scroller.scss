@@ -35,4 +35,22 @@
       border-radius: 1rem;
     }
   }
+
+  &__view-details-btn {
+    border: 2px solid $color-secondary;
+    background-color: transparent;
+    color: $color-secondary;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    max-width: 4rem;
+    max-height: 4rem;
+    transition: all 0.25s ease-out;
+
+    &:active,
+    &:hover {
+      color: $color-white;
+      background-color: $color-secondary;
+    }
+  }
 }

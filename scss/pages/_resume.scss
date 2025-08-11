@@ -95,6 +95,11 @@
       overflow-y: auto;
       animation: fadeUp 0.7s ease-out 0.8s forwards;
 
+      @include respond(phone-port) {
+        max-width: 31rem;
+        min-height: 19rem;
+      }
+
       &__tab {
         display: none;
         padding-left: 0.8rem;

@@ -85,19 +85,19 @@
   font-family: "Orbitron", sans-serif;
 }
 
-.tippy-box[data-theme~=personal-profile] {
+.tippy-box[data-theme~=primary] {
   background-color: #ffb428;
 }
 
-.tippy-box[data-theme~=personal-profile][data-placement^=bottom] > .tippy-arrow::before {
+.tippy-box[data-theme~=primary][data-placement^=bottom] > .tippy-arrow::before {
   color: #ffb428;
 }
 
-.tippy-box[data-theme~=student-profile] {
+.tippy-box[data-theme~=secondary] {
   background-color: #2cc3ff;
 }
 
-.tippy-box[data-theme~=student-profile][data-placement^=bottom] > .tippy-arrow::before {
+.tippy-box[data-theme~=secondary][data-placement^=bottom] > .tippy-arrow::before {
   color: #2cc3ff;
 }
 

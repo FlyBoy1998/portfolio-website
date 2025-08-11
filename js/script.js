@@ -49,15 +49,15 @@ function setTippyTooltips() {
     const studentGitHubLink = document.querySelector(
       ".cta-buttons__github-student"
     );
-    setTippyProps(personalGitHubLink, "personal-profile", "Personal GitHub");
-    setTippyProps(studentGitHubLink, "student-profile", "Student GitHub");
+    setTippyProps(personalGitHubLink, "primary", "Personal GitHub");
+    setTippyProps(studentGitHubLink, "secondary", "Student GitHub");
   }
 
   if (page === "resume") {
     const skillsDetailsBtn = document.querySelector(
       ".scroller__skills-details-btn"
     );
-    setTippyProps(skillsDetailsBtn, "student-profile", "Skills Details");
+    setTippyProps(skillsDetailsBtn, "secondary", "Skills Details");
   }
 }
 

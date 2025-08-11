@@ -5,20 +5,20 @@
   font-family: "Orbitron", sans-serif;
 }
 
-.tippy-box[data-theme~="personal-profile"] {
+.tippy-box[data-theme~="primary"] {
   background-color: $color-primary;
 }
 
-.tippy-box[data-theme~="personal-profile"][data-placement^="bottom"]
+.tippy-box[data-theme~="primary"][data-placement^="bottom"]
   > .tippy-arrow::before {
   color: $color-primary;
 }
 
-.tippy-box[data-theme~="student-profile"] {
+.tippy-box[data-theme~="secondary"] {
   background-color: $color-secondary;
 }
 
-.tippy-box[data-theme~="student-profile"][data-placement^="bottom"]
+.tippy-box[data-theme~="secondary"][data-placement^="bottom"]
   > .tippy-arrow::before {
   color: $color-secondary;
 }

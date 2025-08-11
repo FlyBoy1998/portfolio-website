@@ -464,7 +464,7 @@ h6 {
   background-color: rgba(44, 195, 255, 0.3215686275);
   border-radius: 1rem;
 }
-.scroller__view-details-btn {
+.scroller__skills-details-btn {
   border: 2px solid #2cc3ff;
   background-color: transparent;
   color: #2cc3ff;
@@ -475,7 +475,7 @@ h6 {
   max-height: 4rem;
   transition: all 0.25s ease-out;
 }
-.scroller__view-details-btn:active, .scroller__view-details-btn:hover {
+.scroller__skills-details-btn:active, .scroller__skills-details-btn:hover {
   color: #f5f5f5;
   background-color: #2cc3ff;
 }

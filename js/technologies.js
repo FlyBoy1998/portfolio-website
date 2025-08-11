@@ -66,3 +66,5 @@ const technologies = [
     altText: "GitHub Icon",
   },
 ];
+
+export default technologies;

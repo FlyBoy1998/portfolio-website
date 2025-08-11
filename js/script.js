@@ -52,6 +52,13 @@ function setTippyTooltips() {
     setTippyProps(personalGitHubLink, "personal-profile", "Personal GitHub");
     setTippyProps(studentGitHubLink, "student-profile", "Student GitHub");
   }
+
+  if (page === "resume") {
+    const skillsDetailsBtn = document.querySelector(
+      ".scroller__skills-details-btn"
+    );
+    setTippyProps(skillsDetailsBtn, "student-profile", "Skills Details");
+  }
 }
 
 hamburgerBtn.addEventListener("click", displayOffScreenNav);

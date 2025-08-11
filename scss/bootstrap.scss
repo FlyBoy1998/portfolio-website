@@ -27,4 +27,7 @@ $container-max-widths: (
   xxl: 1200px,
 );
 
+// Assign a new value to modal backdrop opacity
+$modal-backdrop-opacity: 0.7;
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

@@ -269,6 +269,8 @@
               <button
                 class="scroller__skills-details-btn"
                 aria-label="Skills Details Button"
+                data-bs-toggle="modal"
+                data-bs-target="#skills-details-modal"
               >
                 <i class="fa-solid fa-info"></i>
               </button>
@@ -277,6 +279,42 @@
         </section>
       </div>
     </header>
+
+    <!-- Skills Details Modal -->
+    <div
+      class="modal fade"
+      id="skills-details-modal"
+      tabindex="-1"
+      aria-labelledby="skills-details-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header p-4">
+            <h1 class="modal-title display-5" id="skills-details-label">
+              What I do
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- <div class="technologies-container">
+              <div class="technology">
+                <div class="technology__icon">
+                  <img src="./assets/images/html5-icon.png" alt="HTML5 Icon" />
+                </div>
+                <p class="technology__name">HTML5</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script
       src="./js/finisher-header.es5.min.js"

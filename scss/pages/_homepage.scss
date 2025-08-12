@@ -1,4 +1,6 @@
 .homepage-header {
+  @include add-focus(homepage);
+
   background-image: $darken-bg, url("../../assets/images/earth-tech.jpg");
   @extend %header;
 
@@ -93,6 +95,10 @@
         &:active {
           background-color: $color-secondary;
           color: $color-white;
+        }
+
+        &:focus {
+          outline-color: $color-secondary !important;
         }
       }
     }

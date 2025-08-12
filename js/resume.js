@@ -1,5 +1,3 @@
-import technologies from "./technologies.js";
-
 const resumeSubtextHighlight = document.querySelector(
   ".resume-subtext__highlight"
 );

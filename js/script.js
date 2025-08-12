@@ -72,8 +72,8 @@ function setTippyTooltips() {
 
 function setScrollerTippyTooltip() {
   if (page === "resume") {
-    const tabContent = document.querySelector(".tab-content");
-    tabContent.addEventListener("mouseover", (e) => {
+    const scrollerInner = document.querySelector(".scroller__inner");
+    scrollerInner.addEventListener("mouseover", (e) => {
       if (e.target.classList.contains("scroller__inner--icon")) {
         const targetEl = e.target;
         const techName = targetEl.dataset.techName;
@@ -81,7 +81,7 @@ function setScrollerTippyTooltip() {
         pauseScroller();
       }
     });
-    tabContent.addEventListener("mouseleave", () => {
+    scrollerInner.addEventListener("mouseleave", () => {
       runScroller();
     });
   }

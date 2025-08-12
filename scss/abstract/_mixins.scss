@@ -38,6 +38,19 @@ $theme-colors: (
   }
 }
 
+@mixin add-focus($page) {
+  $theme-color: map-get($theme-colors, $page);
+
+  @if $theme-color == null {
+    $theme-color: $color-primary;
+  }
+
+  :is(a, button, input, textarea):focus-visible {
+    outline: $outline-size $outline-style $theme-color !important;
+    outline-offset: $outline-offset !important;
+  }
+}
+
 @mixin navbar-theme($page) {
   $theme-color: map-get($theme-colors, $page);
 

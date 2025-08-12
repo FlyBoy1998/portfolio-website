@@ -17,7 +17,7 @@
     .main-content {
       .resume-heading {
         @extend %main-heading;
-        animation: fadeUp 0.7s ease-out 0.3s forwards;
+        animation: fadeUp $animation-delay-300;
 
         &::before {
           content: "";
@@ -36,7 +36,7 @@
       .resume-subtext {
         color: $color-gray;
         letter-spacing: 1.1px;
-        animation: fadeUp 0.7s ease-out 0.4s forwards;
+        animation: fadeUp $animation-delay-400;
 
         &__highlight {
           color: $color-secondary;
@@ -78,13 +78,13 @@
         }
 
         &__button:nth-of-type(1) {
-          animation: fadeUp 0.7s ease-out 0.5s forwards;
+          animation: fadeUp $animation-delay-500;
         }
         &__button:nth-of-type(2) {
-          animation: fadeUp 0.7s ease-out 0.6s forwards;
+          animation: fadeUp $animation-delay-600;
         }
         &__button:nth-of-type(3) {
-          animation: fadeUp 0.7s ease-out 0.7s forwards;
+          animation: fadeUp $animation-delay-700;
         }
       }
     }
@@ -93,7 +93,7 @@
       backdrop-filter: blur(1rem) brightness(40%);
       border-radius: 1rem;
       overflow-y: auto;
-      animation: fadeUp 0.7s ease-out 0.8s forwards;
+      animation: fadeUp $animation-delay-800;
 
       @include respond(phone-port) {
         max-width: 31rem;

@@ -139,6 +139,32 @@ body {
   background-color: #0a0a56;
   font-size: 1.6rem;
 }
+body[data-page=homepage] ::-webkit-scrollbar {
+  -webkit-box-shadow: inset 0 0 5px #ffb428;
+  box-shadow: inset 0 0 5px #ffb428;
+  border-radius: 10px;
+  width: 0.6rem;
+}
+body[data-page=homepage] ::-webkit-scrollbar-thumb {
+  background: #ffb428;
+  border-radius: 10px;
+}
+body[data-page=homepage] ::-webkit-scrollbar-thumb:hover {
+  background: #ffb428;
+}
+body[data-page=resume] ::-webkit-scrollbar {
+  -webkit-box-shadow: inset 0 0 5px #2cc3ff;
+  box-shadow: inset 0 0 5px #2cc3ff;
+  border-radius: 10px;
+  width: 0.6rem;
+}
+body[data-page=resume] ::-webkit-scrollbar-thumb {
+  background: #2cc3ff;
+  border-radius: 10px;
+}
+body[data-page=resume] ::-webkit-scrollbar-thumb:hover {
+  background: #2cc3ff;
+}
 
 h1,
 h2,
@@ -686,8 +712,8 @@ h6 {
 }
 @media only screen and (max-width: 36em) {
   .resume-header .flex-container .tab-content {
-    max-width: 31rem;
-    min-height: 19rem;
+    max-width: 30rem;
+    max-height: 14rem;
   }
 }
 .resume-header .flex-container .tab-content__tab {

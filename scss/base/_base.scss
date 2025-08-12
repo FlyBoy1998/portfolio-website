@@ -30,6 +30,13 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: $color-blue-dark;
   font-size: 1.6rem;
+
+  &[data-page="homepage"] {
+    @include scrollbar(homepage);
+  }
+  &[data-page="resume"] {
+    @include scrollbar(resume);
+  }
 }
 
 h1,

@@ -6,7 +6,6 @@ const resumeSubtextHighlight = document.querySelector(
 const tabButtons = document.querySelectorAll(".tab-buttons__button");
 const tabContent = document.querySelectorAll(".tab-content__tab");
 const scroller = document.querySelector(".scroller");
-const technologiesContainer = document.querySelector(".technologies-container");
 
 const typed = new Typed(resumeSubtextHighlight, {
   strings: [
@@ -61,28 +60,5 @@ function addScrollAnimation() {
   }
 }
 
-function displayTechnologiesMarkup() {
-  technologiesContainer.innerHTML = "";
-  const markup = technologies
-    .map((technology) => {
-      return `
-      <div class="technology d-flex flex-column align-items-center p-3">
-        <div class="technology__icon">
-          <img
-            src="./assets/images/${technology.technologyIcon}"
-            alt="${technology.altText}"
-            class="h-100"
-          />
-        </div>
-        <p class="technology__name text-center">${technology.technologyName}</p>
-      </div>
-    `;
-    })
-    .join("");
-
-  technologiesContainer.insertAdjacentHTML("afterbegin", markup);
-}
-
 selectResumeTab();
 addScrollAnimation();
-displayTechnologiesMarkup();

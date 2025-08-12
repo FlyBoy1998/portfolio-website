@@ -31,32 +31,14 @@
 
     &--icon {
       height: 6rem;
-      background-color: $color-secondary-transparent;
+      background-color: $color-secondary-transparent-1;
       border-radius: 1rem;
       transition: background-color 0.25s ease-out;
 
       &:hover {
         cursor: pointer;
-        background-color: $color-secondary-dark;
+        background-color: $color-secondary-transparent-2;
       }
-    }
-  }
-
-  &__skills-details-btn {
-    border: 2px solid $color-secondary;
-    background-color: transparent;
-    color: $color-secondary;
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    max-width: 4rem;
-    max-height: 4rem;
-    transition: all 0.25s ease-out;
-
-    &:active,
-    &:hover {
-      color: $color-white;
-      background-color: $color-secondary;
     }
   }
 }

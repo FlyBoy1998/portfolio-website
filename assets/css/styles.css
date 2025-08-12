@@ -461,28 +461,13 @@ h6 {
 }
 .scroller__inner--icon {
   height: 6rem;
-  background-color: rgba(44, 195, 255, 0.3215686275);
+  background-color: rgba(44, 195, 255, 0.2901960784);
   border-radius: 1rem;
   transition: background-color 0.25s ease-out;
 }
 .scroller__inner--icon:hover {
   cursor: pointer;
-  background-color: #0093cd;
-}
-.scroller__skills-details-btn {
-  border: 2px solid #2cc3ff;
-  background-color: transparent;
-  color: #2cc3ff;
-  border-radius: 50%;
-  height: 3rem;
-  width: 3rem;
-  max-width: 4rem;
-  max-height: 4rem;
-  transition: all 0.25s ease-out;
-}
-.scroller__skills-details-btn:active, .scroller__skills-details-btn:hover {
-  color: #f5f5f5;
-  background-color: #2cc3ff;
+  background-color: rgba(44, 195, 255, 0.3882352941);
 }
 
 #skills-details-modal .modal-content {

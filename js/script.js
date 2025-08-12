@@ -35,6 +35,14 @@ function hideOffScreenNav() {
   removeFadeLeftAnimation();
 }
 
+function runScroller() {
+  scrollerInner.style.animationPlayState = "running";
+}
+
+function pauseScroller() {
+  scrollerInner.style.animationPlayState = "paused";
+}
+
 function setTippyProps(element, theme, content) {
   tippy(element, {
     content,
@@ -70,7 +78,11 @@ function setScrollerTippyTooltip() {
         const targetEl = e.target;
         const techName = targetEl.dataset.techName;
         setTippyProps(targetEl, "secondary", techName);
+        pauseScroller();
       }
+    });
+    tabContent.addEventListener("mouseleave", () => {
+      runScroller();
     });
   }
 }

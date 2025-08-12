@@ -5,6 +5,30 @@ $theme-colors: (
   contact: $color-primary,
 );
 
+@mixin scrollbar($page) {
+  $theme-color: map-get($theme-colors, $page);
+
+  @if $theme-color == null {
+    $theme-color: $color-primary;
+  }
+
+  ::-webkit-scrollbar {
+    -webkit-box-shadow: inset 0 0 5px $theme-color;
+    box-shadow: inset 0 0 5px $theme-color;
+    border-radius: 10px;
+    width: 0.6rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $theme-color;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $theme-color;
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone-port {
     @media only screen and (max-width: 36em) {

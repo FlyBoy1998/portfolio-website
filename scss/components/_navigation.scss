@@ -8,13 +8,13 @@
     color: $color-white;
     font-family: "Orbitron", sans-serif;
     transition: color 0.25s ease-out;
-    animation: fadeUp 0.7s ease-out forwards;
+    animation: fadeUp $animation-delay-none;
   }
 
   &__links {
     gap: 2.4rem;
     border-bottom: 2px solid transparent;
-    animation: fadeUp 0.7s ease-out 0.1s forwards;
+    animation: fadeUp $animation-delay-100;
 
     .hire-me-btn {
       padding: 3.2rem 2rem;
@@ -45,7 +45,7 @@
     width: 3rem;
     height: 2.4rem;
     background-color: transparent;
-    animation: fadeUp 0.7s ease-out 0.1s forwards;
+    animation: fadeUp $animation-delay-100;
 
     @include respond(tab-port) {
       display: block !important;

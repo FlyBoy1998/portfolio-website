@@ -14,11 +14,11 @@
 
       &:nth-of-type(1) {
         color: $color-primary-light;
-        animation: fadeUp 0.7s ease-out 0.2s forwards;
+        animation: fadeUp $animation-delay-200;
       }
       &:nth-of-type(2) {
         color: $color-gray;
-        animation: fadeUp 0.7s ease-out 0.4s forwards;
+        animation: fadeUp $animation-delay-400;
 
         @include respond(phone-port) {
           width: 75% !important;
@@ -28,7 +28,7 @@
 
     .homepage-heading {
       @extend %main-heading;
-      animation: fadeUp 0.7s ease-out 0.3s forwards;
+      animation: fadeUp $animation-delay-300;
 
       &::before {
         content: "";
@@ -70,7 +70,7 @@
         padding-right: 2.2rem;
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
-        animation: fadeUp 0.7s ease-out 0.5s forwards;
+        animation: fadeUp $animation-delay-500;
       }
 
       &__github,
@@ -81,13 +81,13 @@
       }
 
       &__github {
-        animation: fadeUp 0.7s ease-out 0.6s forwards;
+        animation: fadeUp $animation-delay-600;
       }
 
       &__github-student {
         border-color: $color-secondary;
         color: $color-secondary;
-        animation: fadeUp 0.7s ease-out 0.7s forwards;
+        animation: fadeUp $animation-delay-700;
 
         &:hover,
         &:active {

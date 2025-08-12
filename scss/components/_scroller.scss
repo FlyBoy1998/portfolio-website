@@ -33,6 +33,12 @@
       height: 6rem;
       background-color: $color-secondary-transparent;
       border-radius: 1rem;
+      transition: background-color 0.25s ease-out;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-secondary-dark;
+      }
     }
   }
 

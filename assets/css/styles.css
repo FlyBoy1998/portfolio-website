@@ -463,6 +463,11 @@ h6 {
   height: 6rem;
   background-color: rgba(44, 195, 255, 0.3215686275);
   border-radius: 1rem;
+  transition: background-color 0.25s ease-out;
+}
+.scroller__inner--icon:hover {
+  cursor: pointer;
+  background-color: #0093cd;
 }
 .scroller__skills-details-btn {
   border: 2px solid #2cc3ff;

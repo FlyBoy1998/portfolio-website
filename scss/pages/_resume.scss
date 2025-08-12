@@ -98,8 +98,8 @@
       animation: fadeUp $animation-delay-800;
 
       @include respond(phone-port) {
-        max-width: 31rem;
-        min-height: 19rem;
+        max-width: 30rem;
+        max-height: 14rem;
       }
 
       &__tab {

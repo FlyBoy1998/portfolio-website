@@ -7,6 +7,7 @@ const offScreenNavCloseBtn = document.querySelector(
 const offScreenNavLinks = document.querySelectorAll(
   ".off-screen-nav__links--link"
 );
+const scrollerInner = document.querySelector(".scroller__inner");
 
 function addFadeLeftAnimation() {
   let animationDelay = 0.2;
@@ -61,6 +62,20 @@ function setTippyTooltips() {
   }
 }
 
+function setScrollerTippyTooltip() {
+  if (page === "resume") {
+    const tabContent = document.querySelector(".tab-content");
+    tabContent.addEventListener("mouseover", (e) => {
+      if (e.target.classList.contains("scroller__inner--icon")) {
+        const targetEl = e.target;
+        const techName = targetEl.dataset.techName;
+        setTippyProps(targetEl, "secondary", techName);
+      }
+    });
+  }
+}
+
 hamburgerBtn.addEventListener("click", displayOffScreenNav);
 offScreenNavCloseBtn.addEventListener("click", hideOffScreenNav);
+setScrollerTippyTooltip();
 setTippyTooltips();

@@ -1,0 +1,7 @@
+.contact-navbar {
+  @include navbar-theme(contact);
+}
+
+.off-screen-nav-contact {
+  @include off-screen-nav(contact);
+}

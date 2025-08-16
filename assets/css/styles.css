@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-.resume-header, .homepage-header {
+.contact-header, .resume-header, .homepage-header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -468,6 +468,82 @@ h6 {
   font-family: "Orbitron", sans-serif;
 }
 
+.contact-navbar .navbar__logo span {
+  color: #2cc3ff;
+}
+.contact-navbar .navbar__logo:hover, .contact-navbar .navbar__logo:active {
+  color: #2cc3ff;
+}
+.contact-navbar .navbar__links .hire-me-btn {
+  background-color: #2cc3ff;
+}
+.contact-navbar .navbar__links .hire-me-btn:hover, .contact-navbar .navbar__links .hire-me-btn:active {
+  color: #f5f5f5;
+}
+.contact-navbar .navbar__links--link:hover, .contact-navbar .navbar__links--link:active {
+  color: #2cc3ff;
+}
+.contact-navbar .navbar__links--link.active {
+  color: #2cc3ff;
+  border-bottom: 2px solid #2cc3ff;
+}
+
+.off-screen-nav-contact {
+  background-color: #101010;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+@media only screen and (max-width: 48em) {
+  .off-screen-nav-contact {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .off-screen-nav-contact {
+    width: 75%;
+  }
+}
+.off-screen-nav-contact.active {
+  transform: translateX(0);
+  z-index: 3;
+}
+.off-screen-nav-contact .off-screen-nav__close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 2.8rem;
+  right: 3rem;
+  color: #f5f5f5;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 36em) {
+  .off-screen-nav-contact .off-screen-nav__close-btn {
+    right: 0.8rem;
+  }
+}
+.off-screen-nav-contact .off-screen-nav__close-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-color: #2cc3ff;
+  filter: blur(1rem);
+}
+.off-screen-nav-contact .off-screen-nav__links > *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.off-screen-nav-contact .off-screen-nav__links--link {
+  color: #2cc3ff;
+  font-family: "Orbitron", sans-serif;
+}
+
 .scroller {
   max-width: 100%;
 }
@@ -733,4 +809,17 @@ h6 {
 
 .typed-cursor {
   color: #f5f5f5;
+}
+
+.contact-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/earth-tech-blue.jpg");
+}
+.contact-header :is(a, button, input, textarea):focus-visible {
+  outline: max(2px, 0.08em) solid #2cc3ff !important;
+  outline-offset: 4px !important;
+}
+@media only screen and (max-width: 62em) and (orientation: landscape) {
+  .contact-header {
+    padding: 6rem 0;
+  }
 }

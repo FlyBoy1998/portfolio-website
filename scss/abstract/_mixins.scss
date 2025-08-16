@@ -1,8 +1,8 @@
 $theme-colors: (
   homepage: $color-primary,
   resume: $color-secondary,
-  projects: $color-secondary,
-  contact: $color-primary,
+  projects: $color-primary,
+  contact: $color-secondary,
 );
 
 @mixin scrollbar($page) {

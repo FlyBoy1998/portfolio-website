@@ -13,6 +13,7 @@
 
     .contact-heading {
       @extend %main-heading;
+      animation: fadeUp $animation-delay-200;
 
       &::before {
         content: "";
@@ -38,6 +39,13 @@
       }
 
       &__item {
+        &:nth-child(1) {
+          animation: fadeUp $animation-delay-300;
+        }
+        &:nth-child(2) {
+          animation: fadeUp $animation-delay-400;
+        }
+
         &--icon {
           display: flex;
           align-items: center;

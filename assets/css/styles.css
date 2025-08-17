@@ -784,6 +784,9 @@ h6 {
 .contact-header .main-content {
   z-index: 2;
 }
+.contact-header .main-content .contact-heading {
+  animation: fadeUp 0.7s ease-out 200ms forwards;
+}
 .contact-header .main-content .contact-heading::before {
   content: "";
   position: absolute;
@@ -799,6 +802,12 @@ h6 {
   display: flex;
   align-items: center;
   gap: 1.4rem;
+}
+.contact-header .main-content .contact-details__item:nth-child(1) {
+  animation: fadeUp 0.7s ease-out 300ms forwards;
+}
+.contact-header .main-content .contact-details__item:nth-child(2) {
+  animation: fadeUp 0.7s ease-out 400ms forwards;
 }
 .contact-header .main-content .contact-details__item--icon {
   display: flex;

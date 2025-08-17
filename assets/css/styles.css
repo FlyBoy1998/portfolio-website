@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.contact-header .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
+.contact-header .flex-container .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
   display: inline-block;
   font-size: 4.5rem;
   position: relative;
@@ -16,22 +16,22 @@
   color: #f5f5f5;
 }
 @media only screen and (min-width: 75em) {
-  .contact-header .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
+  .contact-header .flex-container .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
     font-size: 4.5rem;
   }
 }
 @media only screen and (max-width: 62em) {
-  .contact-header .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
+  .contact-header .flex-container .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
     font-size: 4rem;
   }
 }
 @media only screen and (max-width: 48em) {
-  .contact-header .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
+  .contact-header .flex-container .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
     font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 36em) {
-  .contact-header .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
+  .contact-header .flex-container .main-content .contact-heading, .resume-header .flex-container .main-content .resume-heading, .homepage-header .main-content .homepage-heading {
     font-size: 4rem;
   }
 }
@@ -781,13 +781,17 @@ h6 {
     padding: 6rem 0;
   }
 }
-.contact-header .main-content {
+.contact-header .flex-container {
+  gap: 1rem;
   z-index: 2;
 }
-.contact-header .main-content .contact-heading {
+.contact-header .flex-container > * {
+  flex: 1 1 100%;
+}
+.contact-header .flex-container .main-content .contact-heading {
   animation: fadeUp 0.7s ease-out 200ms forwards;
 }
-.contact-header .main-content .contact-heading::before {
+.contact-header .flex-container .main-content .contact-heading::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -795,21 +799,21 @@ h6 {
   background: linear-gradient(to right, #0093cd, transparent 60%);
   filter: blur(1rem);
 }
-.contact-header .main-content .contact-details {
+.contact-header .flex-container .main-content .contact-details {
   gap: 2rem;
 }
-.contact-header .main-content .contact-details > * {
+.contact-header .flex-container .main-content .contact-details > * {
   display: flex;
   align-items: center;
   gap: 1.4rem;
 }
-.contact-header .main-content .contact-details__item:nth-child(1) {
+.contact-header .flex-container .main-content .contact-details__item:nth-child(1) {
   animation: fadeUp 0.7s ease-out 300ms forwards;
 }
-.contact-header .main-content .contact-details__item:nth-child(2) {
+.contact-header .flex-container .main-content .contact-details__item:nth-child(2) {
   animation: fadeUp 0.7s ease-out 400ms forwards;
 }
-.contact-header .main-content .contact-details__item--icon {
+.contact-header .flex-container .main-content .contact-details__item--icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -819,14 +823,14 @@ h6 {
   width: 5.6rem;
   height: 5.6rem;
 }
-.contact-header .main-content .contact-details__item--content {
+.contact-header .flex-container .main-content .contact-details__item--content {
   gap: 0.6rem;
   font-size: 1.4rem;
   letter-spacing: 1.1px;
 }
-.contact-header .main-content .contact-details__item--content--label {
+.contact-header .flex-container .main-content .contact-details__item--content--label {
   color: #919191;
 }
-.contact-header .main-content .contact-details__item--content--text {
+.contact-header .flex-container .main-content .contact-details__item--content--text {
   color: #f5f5f5;
 }

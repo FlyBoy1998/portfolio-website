@@ -860,6 +860,7 @@ h6 {
 }
 .contact-header .flex-container .form-section .contact-form__submit-btn {
   background-color: #2cc3ff;
+  font-size: 1.2rem;
   color: #101010;
   padding: 0 2rem;
   font-family: "Orbitron", sans-serif;

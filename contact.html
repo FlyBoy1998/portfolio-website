@@ -138,7 +138,7 @@
       </nav>
 
       <div
-        class="flex-container container d-flex flex-column flex-sm-row align-items-center align-items-sm-start position-relative"
+        class="flex-container container d-flex flex-column flex-sm-row align-items-center position-relative"
       >
         <section
           class="main-content d-flex flex-column align-items-center align-items-sm-start"
@@ -170,6 +170,64 @@
               </div>
             </div>
           </address>
+        </section>
+
+        <section class="form-section">
+          <form class="contact-form p-4" action="">
+            <div class="row">
+              <div class="col-12 col-lg-6 mb-3">
+                <label for="name" class="form-label contact-form__label"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control contact-form__input"
+                  id="name"
+                  placeholder="John Hammond"
+                  required
+                />
+              </div>
+              <div class="col-12 col-lg-6 mb-3">
+                <label for="email" class="form-label contact-form__label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control contact-form__input"
+                  id="email"
+                  placeholder="emailaddress@mail.com"
+                  required
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label for="subject" class="form-label contact-form__label"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  class="form-control contact-form__input"
+                  id="subject"
+                  placeholder="Development"
+                  required
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label for="message" class="form-label contact-form__label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control contact-form__textarea"
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Enter your message here"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="contact-form__submit-btn py-2">
+              Submit
+            </button>
+          </form>
         </section>
       </div>
     </header>

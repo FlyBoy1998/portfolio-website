@@ -2,6 +2,10 @@
   @include navbar-theme(resume);
 }
 
+.resume-header .navbar-scroll {
+  @include navbar-scroll(resume);
+}
+
 .off-screen-nav-resume {
   @include off-screen-nav(resume);
 }

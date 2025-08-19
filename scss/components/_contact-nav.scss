@@ -2,6 +2,10 @@
   @include navbar-theme(contact);
 }
 
+.contact-header .navbar-scroll {
+  @include navbar-scroll(contact);
+}
+
 .off-screen-nav-contact {
   @include off-screen-nav(contact);
 }

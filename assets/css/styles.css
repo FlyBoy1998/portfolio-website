@@ -310,12 +310,6 @@ h6 {
   font-family: "Orbitron", sans-serif;
 }
 
-.navbar-scroll {
-  background-color: #101010;
-  padding: 2.4rem !important;
-  box-shadow: 1px 2px 10px 3px #d18a06;
-}
-
 .homepage-navbar .navbar__logo span {
   color: #ffb428;
 }
@@ -334,6 +328,12 @@ h6 {
 .homepage-navbar .navbar__links--link.active {
   color: #ffb428;
   border-bottom: 2px solid #ffb428;
+}
+
+.homepage-header .navbar-scroll {
+  background-color: #101010;
+  padding: 2.4rem !important;
+  box-shadow: 1px 2px 10px 3px #ffb428;
 }
 
 .off-screen-nav-homepage {
@@ -412,6 +412,12 @@ h6 {
   border-bottom: 2px solid #2cc3ff;
 }
 
+.resume-header .navbar-scroll {
+  background-color: #101010;
+  padding: 2.4rem !important;
+  box-shadow: 1px 2px 10px 3px #2cc3ff;
+}
+
 .off-screen-nav-resume {
   background-color: #101010;
   top: 0;
@@ -486,6 +492,12 @@ h6 {
 .contact-navbar .navbar__links--link.active {
   color: #2cc3ff;
   border-bottom: 2px solid #2cc3ff;
+}
+
+.contact-header .navbar-scroll {
+  background-color: #101010;
+  padding: 2.4rem !important;
+  box-shadow: 1px 2px 10px 3px #2cc3ff;
 }
 
 .off-screen-nav-contact {
@@ -802,6 +814,11 @@ h6 {
 .contact-header .flex-container .main-content .contact-details {
   gap: 2rem;
 }
+@media only screen and (max-width: 36em) {
+  .contact-header .flex-container .main-content .contact-details {
+    gap: 1rem;
+  }
+}
 .contact-header .flex-container .main-content .contact-details > * {
   display: flex;
   align-items: center;
@@ -838,6 +855,11 @@ h6 {
   backdrop-filter: blur(1rem);
   border-radius: 2rem;
   animation: fadeUp 0.7s ease-out 500ms forwards;
+}
+@media only screen and (max-width: 36em) {
+  .contact-header .flex-container .form-section .contact-form {
+    width: 30.5rem;
+  }
 }
 .contact-header .flex-container .form-section .contact-form__label {
   color: #4bccff;

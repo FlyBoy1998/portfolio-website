@@ -83,6 +83,7 @@
       .contact-form {
         backdrop-filter: blur(1rem);
         border-radius: 2rem;
+        animation: fadeUp $animation-delay-500;
 
         &__label {
           color: $color-secondary-light;

@@ -837,6 +837,7 @@ h6 {
 .contact-header .flex-container .form-section .contact-form {
   backdrop-filter: blur(1rem);
   border-radius: 2rem;
+  animation: fadeUp 0.7s ease-out 500ms forwards;
 }
 .contact-header .flex-container .form-section .contact-form__label {
   color: #4bccff;

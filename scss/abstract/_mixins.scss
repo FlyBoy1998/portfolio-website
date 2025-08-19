@@ -182,3 +182,15 @@ $theme-colors: (
     }
   }
 }
+
+@mixin navbar-scroll($page) {
+  $theme-color: map-get($theme-colors, $page);
+
+  @if $theme-color == null {
+    $theme-color: $color-primary;
+  }
+
+  background-color: $color-black;
+  padding: 2.4rem !important;
+  box-shadow: 1px 2px 10px 3px $theme-color;
+}

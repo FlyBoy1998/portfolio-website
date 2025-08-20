@@ -38,6 +38,10 @@
       .contact-details {
         gap: 2rem;
 
+        @include respond(phone-port) {
+          gap: 1rem;
+        }
+
         & > * {
           display: flex;
           align-items: center;
@@ -84,6 +88,10 @@
         backdrop-filter: blur(1rem);
         border-radius: 2rem;
         animation: fadeUp $animation-delay-500;
+
+        @include respond(phone-port) {
+          width: 30.5rem;
+        }
 
         &__label {
           color: $color-secondary-light;

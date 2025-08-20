@@ -1,0 +1,11 @@
+.projects-navbar {
+  @include navbar-theme(projects);
+}
+
+.projects-header .navbar-scroll {
+  @include navbar-scroll(projects);
+}
+
+.off-screen-nav-projects {
+  @include off-screen-nav(projects);
+}

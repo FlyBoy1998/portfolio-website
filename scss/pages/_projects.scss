@@ -1,0 +1,10 @@
+.projects-header {
+  @include add-focus(projects);
+
+  background-image: $darken-bg, url("../../assets/images/earth-tech.jpg");
+  @extend %header;
+
+  @include respond(phone-land) {
+    padding: 6rem 0;
+  }
+}

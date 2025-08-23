@@ -13,20 +13,12 @@
     background-color: $color-black;
     border-radius: 2rem;
     left: calc(50% - 16rem);
+    border: 1px solid $color-primary-dark;
+    transition: all 0.5s ease-out;
 
     @include respond(phone-port) {
       max-width: 28rem;
       left: calc(50% - 14rem);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: $color-primary-dark;
-      z-index: -1;
-      filter: blur(0.6rem);
-      border-radius: inherit;
     }
 
     &__image {
@@ -80,6 +72,7 @@
 
 .slider-button {
   position: absolute;
+  z-index: 3;
   top: 50%;
   transform: translateY(-50%);
   border: none;
@@ -87,17 +80,11 @@
   height: 4rem;
   border-radius: 50%;
   border: 2px solid $color-primary;
-  background-color: transparent;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
   transition: all 0.25s ease-out;
 
-  &:hover,
-  &:active {
-    background-color: $color-primary;
-    color: $color-white;
-  }
-
   &.next {
-    right: 0;
+    right: 0.75rem;
   }
 }

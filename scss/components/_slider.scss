@@ -1,0 +1,79 @@
+.slider {
+  min-height: 36rem;
+
+  @include respond(phone-port) {
+    min-height: 38rem;
+  }
+
+  .project {
+    position: absolute;
+    padding: 2.4rem;
+    gap: 2rem;
+    max-width: 32rem;
+    background-color: $color-black;
+    border-radius: 2rem;
+    left: calc(50% - 16rem);
+
+    @include respond(phone-port) {
+      max-width: 28rem;
+      left: calc(50% - 14rem);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: $color-primary-dark;
+      z-index: -1;
+      filter: blur(0.6rem);
+      border-radius: inherit;
+    }
+
+    &__image {
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    &__details {
+      &--title {
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 2.4rem;
+      }
+
+      &--description {
+        font-size: 1.2rem;
+        color: $color-white;
+        letter-spacing: 1.1px;
+      }
+
+      &--cta {
+        gap: 1rem;
+
+        & > * {
+          display: flex;
+          justify-content: center;
+          font-size: 2rem;
+          padding: 0.6rem 0;
+          border-radius: 1.2rem;
+          flex: 1 1 100%;
+          background-color: transparent;
+          border: 2px solid $color-primary;
+          color: $color-primary;
+          transition: all 0.25s ease-out;
+
+          &:hover,
+          &:active {
+            color: $color-white;
+            background-color: $color-primary;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

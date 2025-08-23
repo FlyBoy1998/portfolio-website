@@ -7,4 +7,8 @@
   @include respond(phone-land) {
     padding: 6rem 0;
   }
+
+  .projects-container {
+    z-index: 2;
+  }
 }

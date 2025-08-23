@@ -1056,6 +1056,7 @@ h6 {
 }
 .contact-header .flex-container .form-section .contact-form__input::placeholder, .contact-header .flex-container .form-section .contact-form__textarea::placeholder {
   color: #919191;
+  letter-spacing: 1.1px;
 }
 .contact-header .flex-container .form-section .contact-form__textarea {
   resize: none;

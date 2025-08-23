@@ -77,3 +77,27 @@
     }
   }
 }
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid $color-primary;
+  background-color: transparent;
+  color: $color-primary;
+  transition: all 0.25s ease-out;
+
+  &:hover,
+  &:active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &.next {
+    right: 0;
+  }
+}

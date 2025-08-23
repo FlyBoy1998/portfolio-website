@@ -68,6 +68,24 @@ function setTippyTooltips() {
     );
     setTippyProps(skillsDetailsBtn, "secondary", "Skills Details");
   }
+
+  if (page === "projects") {
+    const projectsContainer = document.querySelector(".projects-container");
+    projectsContainer.addEventListener("mouseover", (e) => {
+      if (e.target.classList.contains("project__details--cta--live-version")) {
+        const liveVersionLink = e.target;
+        setTippyProps(liveVersionLink, "primary", "Live Version");
+      }
+      if (e.target.classList.contains("project__details--cta--source-code")) {
+        const sourceCodeLink = e.target;
+        setTippyProps(sourceCodeLink, "primary", "Source Code");
+      }
+      if (e.target.classList.contains("project__details--cta--info")) {
+        const sourceCodeLink = e.target;
+        setTippyProps(sourceCodeLink, "primary", "Project Info");
+      }
+    });
+  }
 }
 
 function setScrollerTippyTooltip() {

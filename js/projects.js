@@ -13,7 +13,7 @@ function renderProjectsMarkup() {
           <img
             src="./assets/images/${project.image}"
             class="w-100"
-            alt=""
+            alt="${project.title} Image"
           />
         </div>
         <div class="project__details">

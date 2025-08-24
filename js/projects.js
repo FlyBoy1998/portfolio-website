@@ -8,7 +8,7 @@ function renderProjectsMarkup() {
   const markup = projectsData
     .map((project) => {
       return `
-      <div class="project d-flex flex-column">
+      <div class="project d-flex flex-column" data-project-id="${project.id}">
         <div class="project__image">
           <img
             src="./assets/images/${project.image}"

@@ -1,51 +1,46 @@
-const projects = document.querySelectorAll(".project");
-const prevBtn = document.querySelector(".slider-button.prev");
-const nextBtn = document.querySelector(".slider-button.next");
+import projectsData from "./projects-resource.js";
 
-let active = 0;
+const sliderContainer = document.querySelector(".slider");
 
-function loadShow() {
-  let stt = 0;
+function renderProjectsMarkup() {
+  sliderContainer.innerHTML = "";
 
-  projects[active].style.transform = `none`;
-  projects[active].style.zIndex = 1;
-  projects[active].style.filter = "none";
-  projects[active].style.opacity = 1;
+  const markup = projectsData
+    .map((project) => {
+      return `
+      <div class="project d-flex flex-column">
+        <div class="project__image">
+          <img
+            src="./assets/images/${project.image}"
+            class="w-100"
+            alt=""
+          />
+        </div>
+        <div class="project__details">
+          <h2 class="project__details--title text-center mb-3">
+            ${project.title}
+          </h2>
+          <p class="project__details--description text-center mb-5">
+            ${project.excerpt}
+          </p>
+          <div class="project__details--cta d-flex">
+            <a class="project__details--cta--live-version" href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+            <a class="project__details--cta--source-code" href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <button class="project__details--cta--info">
+              <i class="fa-solid fa-circle-info"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    })
+    .join("");
 
-  for (let i = active + 1; i < projects.length; i++) {
-    stt++;
-    projects[i].style.transform = `translateX(${140 * stt}px) scale(${
-      1 - 0.2 * stt
-    }) perspective(2rem) rotateY(-1deg)`;
-    projects[i].style.zIndex = -stt;
-    projects[i].style.filter = "blur(0.5rem)";
-    projects[i].style.opacity = stt > 2 ? 0 : 0.8;
-  }
-
-  stt = 0;
-
-  for (let i = active - 1; i >= 0; i--) {
-    stt++;
-    projects[i].style.transform = `translateX(${-140 * stt}px) scale(${
-      1 - 0.2 * stt
-    }) perspective(2rem) rotateY(1deg)`;
-    projects[i].style.zIndex = -stt;
-    projects[i].style.filter = "blur(0.5rem)";
-    projects[i].style.opacity = stt > 2 ? 0 : 0.8;
-  }
+  sliderContainer.insertAdjacentHTML("afterbegin", markup);
 }
 
-function next() {
-  active = active + 1 < projects.length ? active + 1 : active;
-  loadShow();
-}
-
-function prev() {
-  active = active - 1 >= 0 ? active - 1 : active;
-  loadShow();
-}
-
-nextBtn.addEventListener("click", next);
-prevBtn.addEventListener("click", prev);
-
-loadShow();
+renderProjectsMarkup();

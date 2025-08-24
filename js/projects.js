@@ -24,10 +24,10 @@ function renderProjectsMarkup() {
             ${project.excerpt}
           </p>
           <div class="project__details--cta d-flex">
-            <a class="project__details--cta--live-version" href="#"
+            <a class="project__details--cta--live-version" href="${project.links.liveVersion}" aria-label="Live Version Link" target="_blank" rel="noopener"
               ><i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
-            <a class="project__details--cta--source-code" href="#">
+            <a class="project__details--cta--source-code" href="${project.links.sourceCode}" aria-label="Source Code Link" target="_blank" rel="noopener">
               <i class="fa-brands fa-github"></i>
             </a>
             <button class="project__details--cta--info">

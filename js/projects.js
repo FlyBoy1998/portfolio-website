@@ -30,7 +30,7 @@ function renderProjectsMarkup() {
             <a class="project__details--cta--source-code" href="${project.links.sourceCode}" aria-label="Source Code Link" target="_blank" rel="noopener">
               <i class="fa-brands fa-github"></i>
             </a>
-            <button class="project__details--cta--info">
+            <button class="project__details--cta--info" data-bs-toggle="modal" data-bs-target="#project-details-modal">
               <i class="fa-solid fa-circle-info"></i>
             </button>
           </div>

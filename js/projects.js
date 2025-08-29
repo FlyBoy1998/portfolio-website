@@ -107,13 +107,17 @@ function renderProjectDetailsModalMarkup() {
               <h2>Lighthouse Audit Summary</h2>
               <canvas id="performances-chart"></canvas>
             </section>
-            <section class="project-modal__cta-links d-flex">
+            <section class="project-modal__cta-links d-flex flex-column flex-sm-row">
               <a href="${
                 projectDisplayed.links.liveVersion
-              }" class="project-modal__cta-links--live-version" target="_blank" rel="noopener">Live Version</a>
+              }" class="project-modal__cta-links--live-version text-center" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Version
+              </a>
               <a href="${
                 projectDisplayed.links.sourceCode
-              }" class="project-modal__cta-links--source-code" target="_blank" rel="noopener">Source Code</a>
+              }" class="project-modal__cta-links--source-code text-center" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
             </section>
           </div>
       `;

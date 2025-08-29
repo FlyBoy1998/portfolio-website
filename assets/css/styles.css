@@ -745,8 +745,15 @@ h6 {
 .project-details-modal .project-modal__cta-links {
   gap: 1rem;
 }
+@media only screen and (max-width: 36em) {
+  .project-details-modal .project-modal__cta-links {
+    gap: 1.2rem;
+  }
+}
 .project-details-modal .project-modal__cta-links > * {
   text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.4rem;
   color: #ffb428;
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;

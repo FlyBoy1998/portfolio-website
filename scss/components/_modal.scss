@@ -96,8 +96,14 @@
     &__cta-links {
       gap: 1rem;
 
+      @include respond(phone-port) {
+        gap: 1.2rem;
+      }
+
       & > * {
         text-decoration: none;
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.4rem;
         color: $color-primary;
         padding: 0.8rem 1.8rem;
         border-radius: 2rem;

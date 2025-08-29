@@ -44,6 +44,21 @@ function renderProjectsMarkup() {
   sliderContainer.insertAdjacentHTML("afterbegin", markup);
 }
 
+function renderTechnologiesMarkup(technologies) {
+  const markup = technologies
+    .map((technology) => {
+      return `
+      <div class="d-flex flex-column align-items-center">
+        <img src="./assets/images/${technology.technologyIcon}" class="w-100" alt="${technology.technologyName} Icon">
+        <p class="text-center m-0">${technology.technologyName}</p>
+      </div>
+    `;
+    })
+    .join("");
+
+  return markup;
+}
+
 function renderProjectDetailsModalMarkup() {
   const projectDetailsModal = new bootstrap.Modal(
     document.getElementById("project-details-modal")
@@ -76,12 +91,17 @@ function renderProjectDetailsModalMarkup() {
               <h2 class="project-modal__technologies--title">
                 Technologies Used
               </h2>
-              <div class="project-modal__technologies--icons">
+              <div class="project-modal__technologies--icons d-flex flex-wrap">
+                ${renderTechnologiesMarkup(projectDisplayed.technologies)}
               </div>
             </section>
             <section class="project-modal__mockups">
               <h2>Multi Device Mockups</h2>
-              <img src="./assets/images/${projectDisplayed.mockups}" class="object-fit-cover" alt="${projectDisplayed.title} multi device mockups">
+              <img src="./assets/images/${
+                projectDisplayed.mockups
+              }" class="object-fit-cover" alt="${
+        projectDisplayed.title
+      } multi device mockups">
             </section>
             <section class="project-modal__performances">
               <h2>Lighthouse Audit Summary</h2>

@@ -1,0 +1,95 @@
+.project-details-modal {
+  background-color: $color-black;
+  border-radius: 2rem;
+
+  .modal-title {
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  h2 {
+    color: $color-primary;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-modal {
+    display: grid;
+    grid-template-areas:
+      "details details"
+      "performance mockups"
+      "technologies technologies"
+      "links links";
+    grid-auto-columns: 1fr;
+    gap: 3.4rem;
+
+    @include respond(tab-land) {
+      grid-template-areas:
+        "details"
+        "performance"
+        "mockups"
+        "technologies"
+        "links";
+    }
+
+    @include respond(phone-port) {
+      gap: 6rem;
+    }
+
+    &__details {
+      grid-area: details;
+
+      &--title {
+        font-weight: 700;
+        color: $color-primary;
+      }
+      &--description {
+        color: $color-white;
+        font-size: 1.3rem;
+        line-height: 2;
+        letter-spacing: 1.1px;
+      }
+    }
+
+    &__performances {
+      #performances-chart {
+        width: 100% !important;
+      }
+    }
+
+    &__mockups {
+      grid-area: mockups;
+
+      img {
+        width: 80%;
+
+        @include respond(phone-port) {
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+
+    &__technologies {
+      grid-area: technologies;
+
+      &--icons {
+        gap: 1.6rem;
+
+        div {
+          width: 8.2rem;
+          background-color: $color-smoke-dark;
+          padding: 1.4rem;
+          border-radius: 1rem;
+          color: $color-white;
+          gap: 0.6rem;
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

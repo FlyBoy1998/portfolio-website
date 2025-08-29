@@ -683,7 +683,8 @@ h6 {
   display: grid;
   grid-template-areas: "details details" "performance mockups" "technologies technologies" "links links";
   grid-auto-columns: 1fr;
-  gap: 3.4rem;
+  row-gap: 5rem;
+  column-gap: 8rem;
 }
 @media only screen and (max-width: 62em) {
   .project-details-modal .project-modal {

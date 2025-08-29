@@ -21,7 +21,8 @@
       "technologies technologies"
       "links links";
     grid-auto-columns: 1fr;
-    gap: 3.4rem;
+    row-gap: 5rem;
+    column-gap: 8rem;
 
     @include respond(tab-land) {
       grid-template-areas:

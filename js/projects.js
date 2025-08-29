@@ -1,4 +1,5 @@
 import projectsData from "./projects-resource.js";
+import renderPerformancesChart from "./chart.js";
 
 const sliderContainer = document.querySelector(".slider");
 
@@ -30,7 +31,7 @@ function renderProjectsMarkup() {
             <a class="project__details--cta--source-code" href="${project.links.sourceCode}" aria-label="Source Code Link" target="_blank" rel="noopener">
               <i class="fa-brands fa-github"></i>
             </a>
-            <button class="project__details--cta--info" data-bs-toggle="modal" data-bs-target="#project-details-modal">
+            <button class="project__details--cta--info" aria-label="Project Details Button">
               <i class="fa-solid fa-circle-info"></i>
             </button>
           </div>
@@ -43,4 +44,63 @@ function renderProjectsMarkup() {
   sliderContainer.insertAdjacentHTML("afterbegin", markup);
 }
 
+function renderProjectDetailsModalMarkup() {
+  const projectDetailsModal = new bootstrap.Modal(
+    document.getElementById("project-details-modal")
+  );
+  const projectDetailsModalContent = document.querySelector(".modal-content");
+
+  sliderContainer.addEventListener("click", (e) => {
+    if (e.target.closest(".project__details--cta--info")) {
+      projectDetailsModalContent.innerHTML = "";
+
+      const projectDetailsBtn = e.target;
+      const projectId =
+        +projectDetailsBtn.closest("[data-project-id]").dataset.projectId;
+      const projectDisplayed = projectsData[projectId - 1];
+
+      const markup = `
+        <div class="modal-header">
+            <h1 class="modal-title display-6" id="project-details-modal-label">
+              ${projectDisplayed.title}
+            </h1>
+          </div>
+          <div class="modal-body project-modal">
+            <section class="project-modal__details">
+              <h2 class="project-modal__details--title">Details</h2>
+              <p class="project-modal__details--description m-0">
+                ${projectDisplayed.description}
+              </p>
+            </section>
+            <section class="project-modal__technologies">
+              <h2 class="project-modal__technologies--title">
+                Technologies Used
+              </h2>
+              <div class="project-modal__technologies--icons">
+              </div>
+            </section>
+            <section class="project-modal__mockups">
+              <h2>Multi Device Mockups</h2>
+              <img src="./assets/images/${projectDisplayed.mockups}" class="object-fit-cover" alt="${projectDisplayed.title} multi device mockups">
+            </section>
+            <section class="project-modal__performances">
+              <h2>Lighthouse Audit Summary</h2>
+              <canvas id="performances-chart"></canvas>
+            </section>
+            <section class="project-modal__cta-buttons">
+              <a href="#">Live</a>
+              <a href="#">Source Code</a>
+              <button>Close</button>
+            </section>
+          </div>
+      `;
+
+      projectDetailsModalContent.insertAdjacentHTML("afterbegin", markup);
+      renderPerformancesChart(projectDisplayed);
+      projectDetailsModal.show();
+    }
+  });
+}
+
+renderProjectDetailsModalMarkup();
 renderProjectsMarkup();

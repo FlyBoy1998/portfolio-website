@@ -37,6 +37,9 @@ body {
   &[data-page="resume"] {
     @include scrollbar(resume);
   }
+  &[data-page="projects"] {
+    @include scrollbar(projects);
+  }
 }
 
 h1,

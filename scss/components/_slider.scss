@@ -80,10 +80,14 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border: 2px solid $color-primary;
-  background-color: $color-primary;
+  background-color: $color-primary-dark;
   color: $color-white;
-  transition: all 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+
+  &:active,
+  &:hover {
+    background-color: $color-primary;
+  }
 
   &.next {
     right: 0.75rem;

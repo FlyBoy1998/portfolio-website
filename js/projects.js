@@ -21,7 +21,7 @@ function renderProjectsMarkup() {
           <h2 class="project__details--title text-center mb-3">
             ${project.title}
           </h2>
-          <p class="project__details--description text-center mb-5">
+          <p class="project__details--description text-center mb-4">
             ${project.excerpt}
           </p>
           <div class="project__details--cta d-flex">

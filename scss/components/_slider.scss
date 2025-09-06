@@ -1,5 +1,6 @@
 .slider {
   min-height: 36rem;
+  animation: fadeUp $animation-delay-400;
 
   @include respond(phone-port) {
     min-height: 38rem;

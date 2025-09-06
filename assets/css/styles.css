@@ -782,6 +782,7 @@ h6 {
 
 .slider {
   min-height: 36rem;
+  animation: fadeUp 0.7s ease-out 400ms forwards;
 }
 @media only screen and (max-width: 36em) {
   .slider {

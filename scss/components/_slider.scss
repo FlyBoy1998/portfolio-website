@@ -81,13 +81,13 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: $color-primary-dark;
+  background-color: $color-primary;
   color: $color-white;
   transition: background-color 0.25s ease-out;
 
   &:active,
   &:hover {
-    background-color: $color-primary;
+    background-color: $color-primary-light;
   }
 
   &.next {

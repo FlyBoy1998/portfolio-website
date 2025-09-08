@@ -1,4 +1,4 @@
-import projectsData from "./projects-resource.js";
+import projectsData from "./projects-data.js";
 import renderPerformancesChart from "./chart.js";
 
 const sliderContainer = document.querySelector(".slider");

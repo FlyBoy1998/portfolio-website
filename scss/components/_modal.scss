@@ -13,6 +13,11 @@
     margin-bottom: 1.2rem;
   }
 
+  .btn-close {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(78%) saturate(1119%)
+      hue-rotate(322deg) brightness(105%) contrast(101%);
+  }
+
   .project-modal {
     display: grid;
     grid-template-areas:

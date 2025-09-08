@@ -1178,6 +1178,7 @@ h6 {
   padding: 0.8rem 1rem;
   font-size: 1.1rem;
   border-color: #919191;
+  letter-spacing: 1.1px;
 }
 .contact-header .flex-container .form-section .contact-form__input::placeholder, .contact-header .flex-container .form-section .contact-form__textarea::placeholder {
   color: #919191;

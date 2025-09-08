@@ -803,8 +803,12 @@ h6 {
 @media only screen and (max-width: 36em) {
   .slider .project {
     max-width: 28rem;
+    height: 35rem;
     left: calc(50% - 14rem);
   }
+}
+.slider .project > * {
+  flex: 1 1 auto;
 }
 .slider .project__image {
   width: 100%;

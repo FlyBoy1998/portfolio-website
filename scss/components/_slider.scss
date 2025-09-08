@@ -19,7 +19,12 @@
 
     @include respond(phone-port) {
       max-width: 28rem;
+      height: 35rem;
       left: calc(50% - 14rem);
+    }
+
+    & > * {
+      flex: 1 1 auto;
     }
 
     &__image {

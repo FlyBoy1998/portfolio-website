@@ -173,7 +173,12 @@
         </section>
 
         <section class="form-section">
-          <form class="fade-up-initial contact-form p-4" action="">
+          <form
+            class="contact-form fade-up-initial p-4"
+            action=""
+            name="contact"
+            netlify
+          >
             <div class="row">
               <div class="col-12 col-lg-6 mb-3">
                 <label for="name" class="form-label contact-form__label"
@@ -183,6 +188,7 @@
                   type="text"
                   class="form-control contact-form__input"
                   id="name"
+                  name="name"
                   placeholder="John Hammond"
                   autocomplete="name"
                   required
@@ -196,6 +202,7 @@
                   type="email"
                   class="form-control contact-form__input"
                   id="email"
+                  name="email"
                   autocomplete="email"
                   placeholder="emailaddress@mail.com"
                   required
@@ -209,6 +216,7 @@
                   type="text"
                   class="form-control contact-form__input"
                   id="subject"
+                  name="subject"
                   placeholder="Development"
                   required
                 />
@@ -221,6 +229,7 @@
                   class="form-control contact-form__textarea"
                   name="message"
                   id="message"
+                  name="message"
                   rows="4"
                   placeholder="Enter your message here"
                   required

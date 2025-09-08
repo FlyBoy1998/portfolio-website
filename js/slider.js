@@ -4,6 +4,20 @@ const nextBtn = document.querySelector(".slider-button.next");
 
 let active = 0;
 
+function updateFocus() {
+  projects.forEach((project, index) => {
+    const buttons = [
+      ...project.querySelector(".project__details--cta").children,
+    ];
+
+    if (index === active) {
+      buttons.forEach((btn) => btn.removeAttribute("tabindex"));
+    } else {
+      buttons.forEach((btn) => btn.setAttribute("tabindex", "-1"));
+    }
+  });
+}
+
 function loadShow() {
   let stt = 0;
 
@@ -33,6 +47,8 @@ function loadShow() {
     projects[i].style.filter = "blur(0.5rem)";
     projects[i].style.opacity = stt > 2 ? 0 : 0.8;
   }
+
+  updateFocus();
 }
 
 function next() {

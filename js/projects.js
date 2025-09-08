@@ -79,6 +79,7 @@ function renderProjectDetailsModalMarkup() {
             <h1 class="modal-title display-6" id="project-details-modal-label">
               ${projectDisplayed.title}
             </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close modal"></button>
           </div>
           <div class="modal-body project-modal">
             <section class="project-modal__details">

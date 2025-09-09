@@ -1,4 +1,3 @@
 # Florin Miron Portfolio Website
 
-<img width="1536" height="1024" alt="portfolio-website-multi-device-mockups" src="https://github.com/user-attachments/assets/3aeb1f42-f465-4604-b565-851a06150b6a" />
-
+![portfolio-device-mockups](https://github.com/user-attachments/assets/b3f9914d-b5da-44d6-b164-5d1b90f85c23)

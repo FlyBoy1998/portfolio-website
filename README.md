@@ -4,8 +4,8 @@
 
 This portfolio website highlights my journey as a self-taught web developer. While I’m just starting out in the professional world, I’ve built several projects that demonstrate my skills in HTML5, CSS3, Bootstrap5, JavaScript, Python, Flask and Django. Here, you’ll find those projects and ways to connect with me.
 
-## Table of Contents
-## [Features](#)
-## [Technlogies Used](#)
-## [Deployment](#)
-## [Credits](#)
+### Table of Contents
+### [Features](#)
+### [Technlogies Used](#)
+### [Deployment](#)
+### [Credits](#)

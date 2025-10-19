@@ -22,10 +22,8 @@ const projectsData = [
     ],
     lightHouseScores: [99, 100, 100, 100],
     links: {
-      liveVersion:
-        "https://florinmiron98.github.io/urban-steakhouse-restaurant/",
-      sourceCode:
-        "https://github.com/FlorinMiron98/urban-steakhouse-restaurant",
+      liveVersion: "https://urban-steakhouse-florin-miron.netlify.app/",
+      sourceCode: "https://github.com/FlyBoy1998/urban-steakhouse-restaurant",
     },
     mockups: "urban-steakhouse-mockup.png",
     image: "urban-steakhouse.jpg",
@@ -58,7 +56,7 @@ const projectsData = [
     lightHouseScores: [92, 95, 96, 91],
     links: {
       liveVersion: "https://jet-set-go-florin-miron.netlify.app/",
-      sourceCode: "https://github.com/FlorinMiron98/Jet-Set-Go",
+      sourceCode: "https://github.com/FlyBoy1998/Jet-Set-Go",
     },
     mockups: "jet-set-go-mockup.png",
     image: "jet-set-go.jpg",
@@ -99,7 +97,7 @@ const projectsData = [
     lightHouseScores: [100, 99, 100, 100],
     links: {
       liveVersion: "https://cinedata-app-5c6257798b71.herokuapp.com/",
-      sourceCode: "https://github.com/FlorinMiron98/CineData",
+      sourceCode: "https://github.com/FlyBoy1998/CineData",
     },
     mockups: "cinedata-mockup.png",
     image: "cinedata.jpg",

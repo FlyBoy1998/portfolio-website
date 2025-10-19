@@ -85,7 +85,6 @@
 
     .form-section {
       .contact-form {
-        backdrop-filter: blur(1rem);
         border-radius: 2rem;
         animation: fadeUp $animation-delay-500;
 
@@ -102,7 +101,7 @@
 
         &__input,
         &__textarea {
-          background-color: $color-black;
+          background-color: $color-black-transparent;
           color: $color-white;
           border-radius: 1rem;
           padding: 0.8rem 1rem;

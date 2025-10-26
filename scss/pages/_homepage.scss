@@ -59,8 +59,8 @@
         z-index: 1;
         transition: all 0.15s ease-out;
 
-        &:not(:last-child):hover,
-        &:not(:last-child):active {
+        &:hover,
+        &:active {
           background-color: $color-primary;
           color: $color-white;
         }
@@ -75,31 +75,11 @@
         animation: fadeUp $animation-delay-500;
       }
 
-      &__github,
-      &__github-student {
+      &__github {
         min-width: 3.25rem;
         min-height: 3.25rem;
         border-radius: 50%;
-      }
-
-      &__github {
         animation: fadeUp $animation-delay-600;
-      }
-
-      &__github-student {
-        border-color: $color-secondary;
-        color: $color-secondary;
-        animation: fadeUp $animation-delay-700;
-
-        &:hover,
-        &:active {
-          background-color: $color-secondary;
-          color: $color-white;
-        }
-
-        &:focus {
-          outline-color: $color-secondary !important;
-        }
       }
     }
   }

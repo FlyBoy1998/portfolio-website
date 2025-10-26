@@ -927,7 +927,7 @@ h6 {
   z-index: 1;
   transition: all 0.15s ease-out;
 }
-.homepage-header .main-content .cta-buttons > *:not(:last-child):hover, .homepage-header .main-content .cta-buttons > *:not(:last-child):active {
+.homepage-header .main-content .cta-buttons > *:hover, .homepage-header .main-content .cta-buttons > *:active {
   background-color: #ffb428;
   color: #f5f5f5;
 }
@@ -939,25 +939,11 @@ h6 {
   font-weight: 700;
   animation: fadeUp 0.7s ease-out 500ms forwards;
 }
-.homepage-header .main-content .cta-buttons__github, .homepage-header .main-content .cta-buttons__github-student {
+.homepage-header .main-content .cta-buttons__github {
   min-width: 3.25rem;
   min-height: 3.25rem;
   border-radius: 50%;
-}
-.homepage-header .main-content .cta-buttons__github {
   animation: fadeUp 0.7s ease-out 600ms forwards;
-}
-.homepage-header .main-content .cta-buttons__github-student {
-  border-color: #2cc3ff;
-  color: #2cc3ff;
-  animation: fadeUp 0.7s ease-out 700ms forwards;
-}
-.homepage-header .main-content .cta-buttons__github-student:hover, .homepage-header .main-content .cta-buttons__github-student:active {
-  background-color: #2cc3ff;
-  color: #f5f5f5;
-}
-.homepage-header .main-content .cta-buttons__github-student:focus {
-  outline-color: #2cc3ff !important;
 }
 
 .resume-header {

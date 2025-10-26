@@ -939,11 +939,14 @@ h6 {
   font-weight: 700;
   animation: fadeUp 0.7s ease-out 500ms forwards;
 }
-.homepage-header .main-content .cta-buttons__github {
+.homepage-header .main-content .cta-buttons__github, .homepage-header .main-content .cta-buttons__linked-in {
   min-width: 3.25rem;
   min-height: 3.25rem;
   border-radius: 50%;
   animation: fadeUp 0.7s ease-out 600ms forwards;
+}
+.homepage-header .main-content .cta-buttons__linked-in {
+  animation: fadeUp 0.7s ease-out 700ms forwards;
 }
 
 .resume-header {

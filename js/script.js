@@ -55,7 +55,9 @@ function setTippyProps(element, theme, content) {
 function setTippyTooltips() {
   if (page === "homepage") {
     const githubLink = document.querySelector(".cta-buttons__github");
+    const linkedInLink = document.querySelector(".cta-buttons__linked-in");
     setTippyProps(githubLink, "primary", "GitHub");
+    setTippyProps(linkedInLink, "primary", "LinkedIn");
   }
 
   if (page === "resume") {

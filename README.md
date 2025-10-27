@@ -6,6 +6,13 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
 
 ### Table of Contents
 1. [Features](#)
-2. [Technlogies Used](#)
-3. [Deployment](#)
-4. [Credits](#)
+   - [Navigation bar](#)
+   - [Landing page](#)
+   - [Resume page](#)
+   - [Projects page](#)
+   - [Contact page](#)
+3. [Technlogies Used](#)
+4. [Deployment](#)
+5. [Credits](#)
+   - [Media](#)
+   - [Code](#)

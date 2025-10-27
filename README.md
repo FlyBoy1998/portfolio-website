@@ -4,7 +4,7 @@
 
 This portfolio website highlights my journey as a self-taught web developer. While I’m just starting out in the professional world, I’ve built several projects that demonstrate my skills in HTML5, CSS3, Bootstrap5, JavaScript, Python, Flask and Django. Here, you’ll find those projects and ways to connect with me.
 
-### Table of Contents
+## Table of Contents
 1. [Features](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md)
    - [Navigation bar](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#navigation-bar)
    - [Landing page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#landing-page)

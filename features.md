@@ -1,5 +1,5 @@
 # Portfolio Website - Features
-## [Main README.md file](#)
+## [Main README.md file](https://github.com/FlyBoy1998/portfolio-website/blob/main/README.md)
 ## Table of Contents
 1. [Navigation bar](#navigation-bar)
 2. [Landing page](#landing-page)

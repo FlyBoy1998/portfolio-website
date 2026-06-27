@@ -143,6 +143,52 @@ const projectsData = [
     mockups: "releaf-mockup.png",
     image: "releaf.jpg",
   },
+  {
+    id: 5,
+    title: "GM Solutions",
+    inProgress: true,
+    excerpt:
+      "A responsive website that helps an interior renovation business showcase its expertise, portfolio, and services.",
+    description:
+      "This project is a modern web application for an interior renovation company, created to strengthen its online presence and attract new clients. It features responsive layouts, reusable React components, client-side routing, and a clean interface that showcases renovation projects, company services, and contact information. The application is built with scalability and maintainability using React, Tailwind CSS, React Router and much more.",
+    technologies: [
+      {
+        technologyName: "HTML5",
+        technologyIcon: "html5-icon.png",
+      },
+      {
+        technologyName: "Tailwind CSS",
+        technologyIcon: "tailwind-css-icon.png",
+      },
+      {
+        technologyName: "JavaScript",
+        technologyIcon: "javascript-icon.png",
+      },
+      {
+        technologyName: "React",
+        technologyIcon: "react-icon.png",
+      },
+      {
+        technologyName: "React Router",
+        technologyIcon: "react-router-icon.png",
+      },
+      {
+        technologyName: "React Query",
+        technologyIcon: "react-query-icon.png",
+      },
+      {
+        technologyName: "Supabase",
+        technologyIcon: "supabase-icon.png",
+      },
+    ],
+    lightHouseScores: [],
+    links: {
+      liveVersion: "",
+      sourceCode: "",
+    },
+    mockups: "",
+    image: "gm-solutions.jpg",
+  },
 ];
 
 export default projectsData;

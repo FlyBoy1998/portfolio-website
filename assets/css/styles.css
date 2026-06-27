@@ -851,6 +851,19 @@ h6 {
 .slider .project__details--cta a {
   text-decoration: none;
 }
+.slider .project__details--in-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+  color: #ffb428;
+  border: 2px solid #ffb428;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+}
+.slider .project__details--in-progress p {
+  margin-bottom: 0;
+}
 
 .slider-button {
   position: absolute;

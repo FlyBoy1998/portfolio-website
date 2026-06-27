@@ -73,6 +73,21 @@
           text-decoration: none;
         }
       }
+
+      &--in-progress {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem 0;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        font-size: 1.4rem;
+        border-radius: 1rem;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

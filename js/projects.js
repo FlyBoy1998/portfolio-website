@@ -1,6 +1,8 @@
 import projectsData from "./projects-data.js";
 import renderPerformancesChart from "./chart.js";
 
+import { renderProjectCtaMarkup } from "./project-cta.js";
+
 const sliderContainer = document.querySelector(".slider");
 
 function renderProjectsMarkup() {
@@ -24,17 +26,9 @@ function renderProjectsMarkup() {
           <p class="project__details--description text-center mb-4">
             ${project.excerpt}
           </p>
-          <div class="project__details--cta d-flex">
-            <a class="project__details--cta--live-version" href="${project.links.liveVersion}" aria-label="Live Version Link" target="_blank" rel="noopener"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-            <a class="project__details--cta--source-code" href="${project.links.sourceCode}" aria-label="Source Code Link" target="_blank" rel="noopener">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <button class="project__details--cta--info" aria-label="Project Details Button">
-              <i class="fa-solid fa-circle-info"></i>
-            </button>
-          </div>
+
+          ${project.inProgress ? '<div class="project__details--in-progress"><p>In progress...</p></div>' : renderProjectCtaMarkup(project.links.liveVersion, project.links.sourceCode)}
+          
         </div>
       </div>
     `;
@@ -61,7 +55,7 @@ function renderTechnologiesMarkup(technologies) {
 
 function renderProjectDetailsModalMarkup() {
   const projectDetailsModal = new bootstrap.Modal(
-    document.getElementById("project-details-modal")
+    document.getElementById("project-details-modal"),
   );
   const projectDetailsModalContent = document.querySelector(".modal-content");
 
@@ -101,8 +95,8 @@ function renderProjectDetailsModalMarkup() {
               <img src="./assets/images/${
                 projectDisplayed.mockups
               }" class="object-fit-cover" alt="${
-        projectDisplayed.title
-      } multi device mockups">
+                projectDisplayed.title
+              } multi device mockups">
             </section>
             <section class="project-modal__performances">
               <h2>Lighthouse Audit Summary</h2>

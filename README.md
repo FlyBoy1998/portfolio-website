@@ -71,3 +71,20 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
    If you're using Visual Studio Code, right-click `index.html` and select **Open with Live Server**.
 6. Begin development
 
+## Credits
+### Media
+1. earth-tech.jpg: [Image source](https://unsplash.com/photos/a-planet-in-space-nc1zsYGkLFA) - Photo by [Javier Miranda](https://unsplash.com/@nuvaproductions)
+2. favicon: [Image source](https://icons8.com/icon/kLkU4c9YfQNM/electronic-brain)
+3. Technologies icons: [Source](https://icons8.com/icons)
+4. Multi device mockups: [Yujin Yeoh](https://yujinyeoh.com/website-mockup-generator)
+### Code
+1. Code for all website's icons was created using [Font Awesome](https://fontawesome.com/)
+2. Code for importing Google Fonts inside the `scss/base/_base.scss` file was created using [Google Fonts](https://fonts.google.com/)
+3. Code for animated background overlay was created using [Finisher](https://www.finisher.co/lab/header/)
+4. Code for the overall layout of the application was created using Bootstrap utility classes.
+5. Code for hover tooltip was created using [TippyJS](https://atomiks.github.io/tippyjs/)
+6. Code for the navigation bar was created using [Bootstrap Navbar Component](https://getbootstrap.com/docs/5.3/components/navbar/)
+7. Code for the animated typing was created using [TypedJS](https://github.com/mattboldt/typed.js/)
+8. Code for project details modal was created using [Bootstrap Modal Component](https://getbootstrap.com/docs/5.3/components/modal/#how-it-works)
+9. Code for lighthouse audit summary chart was created using [ChartJS](https://www.chartjs.org/)
+10. Code for contact form was created using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/#overview)

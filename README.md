@@ -11,11 +11,16 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
    - [Resume page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#resume-page)
    - [Projects page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#projects-page)
    - [Contact page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#contact-page)
-3. [Technlogies Used](#technologies-used)
-4. [Installation](#)
+2. [Technlogies Used](#technologies-used)
+3. [Testing](#)
+   - [Validator Testing](#)
+   - [Performance, Accessibility and Best Practices](#)
+   - [Manual Testing](#)
+   - [Functional testing](#)
+4. [Future Improvements](#future-improvements)
 5. [Deployment](#deployment)
    - [Run This Project Locally](#run-this-project-locally)
-7. [Credits](#)
+6. [Credits](#)
    - [Media](#)
    - [Code](#)
 
@@ -26,6 +31,11 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
 4. JavaScript - It is used to handle user interactions, manipulate the DOM, and manage application logic.
 5. ChartJS - A lightweight JavaScript charting library for creating responsive, animated, and customizable data visualizations. More about Chart.js on the [official website](https://www.chartjs.org/)
 6. TippyJS - Tippy.js is a lightweight and highly customizable library for creating tooltips and popovers in web applications. More about Tippy.js on the [official website](https://atomiks.github.io/tippyjs/)
+
+## Future Improvements
+1. Admin dashboard
+2. Project filtering
+3. Dark/Light mode toggle
 
 ## Deployment
 1. Create a GitHub repository and push your project to it.

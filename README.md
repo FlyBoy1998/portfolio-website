@@ -31,7 +31,8 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
 4. JavaScript - It is used to handle user interactions, manipulate the DOM, and manage application logic.
 5. ChartJS - A lightweight JavaScript charting library for creating responsive, animated, and customizable data visualizations. More about Chart.js on the [official website](https://www.chartjs.org/)
 6. TippyJS - Tippy.js is a lightweight and highly customizable library for creating tooltips and popovers in web applications. More about Tippy.js on the [official website](https://atomiks.github.io/tippyjs/)
-7. Finisher - Used for animated background. More details on the [official website](https://www.finisher.co/lab/header/)
+7. TypedJS - A JavaScript typing animation library. More details on the [official webpage](https://github.com/mattboldt/typed.js/)
+8. Finisher - Used for animated background. More details on the [official website](https://www.finisher.co/lab/header/)
 
 ## Future Improvements
 1. Admin dashboard

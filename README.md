@@ -17,3 +17,11 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
 6. [Credits](#)
    - [Media](#)
    - [Code](#)
+
+## Technologies Used
+1. HTML5 - The foundational markup language for structuring web content.
+2. SCSS - A CSS preprocessor that enables reusable, maintainable, and scalable styles through variables, nesting, mixins, and functions.
+3. Bootstrap V5.3 - Used for creating responsiveness across all screen sizes, pre-designed components and utility classes. More about Bootstrap on the [official website](https://getbootstrap.com/)
+4. JavaScript - It is used to handle user interactions, manipulate the DOM, and manage application logic.
+5. ChartJS - A lightweight JavaScript charting library for creating responsive, animated, and customizable data visualizations. More about Chart.js on the [official website](https://www.chartjs.org/)
+6. TippyJS - Tippy.js is a lightweight and highly customizable library for creating tooltips and popovers in web applications. More about Tippy.js on the [official website](https://atomiks.github.io/tippyjs/)

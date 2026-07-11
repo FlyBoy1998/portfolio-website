@@ -11,9 +11,81 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
    - [Resume page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#resume-page)
    - [Projects page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#projects-page)
    - [Contact page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#contact-page)
-3. [Technlogies Used](#)
-4. [Installation](#)
-5. [Deployment](#)
+2. [Technlogies Used](#technologies-used)
+3. [Testing](#)
+   - [Validator Testing](#)
+   - [Performance, Accessibility and Best Practices](#)
+   - [Manual Testing](#)
+   - [Functional testing](#)
+4. [Future Improvements](#future-improvements)
+5. [Deployment](#deployment)
+   - [Run This Project Locally](#run-this-project-locally)
 6. [Credits](#)
    - [Media](#)
    - [Code](#)
+
+## Technologies Used
+1. HTML5 - The foundational markup language for structuring web content.
+2. SCSS - A CSS preprocessor that enables reusable, maintainable, and scalable styles through variables, nesting, mixins, and functions.
+3. Bootstrap V5.3 - Used for creating responsiveness across all screen sizes, pre-designed components and utility classes. More about Bootstrap on the [official website](https://getbootstrap.com/)
+4. JavaScript - It is used to handle user interactions, manipulate the DOM, and manage application logic.
+5. ChartJS - A lightweight JavaScript charting library for creating responsive, animated, and customizable data visualizations. More about Chart.js on the [official website](https://www.chartjs.org/)
+6. TippyJS - Tippy.js is a lightweight and highly customizable library for creating tooltips and popovers in web applications. More about Tippy.js on the [official website](https://atomiks.github.io/tippyjs/)
+7. TypedJS - A JavaScript typing animation library. More details on the [official webpage](https://github.com/mattboldt/typed.js/)
+8. Finisher - Used for animated background. More details on the [official website](https://www.finisher.co/lab/header/)
+
+## Future Improvements
+1. Admin dashboard
+2. Project filtering
+3. Dark/Light mode toggle
+
+## Deployment
+1. Create a GitHub repository and push your project to it.
+2. Sign in to [Netlify](https://www.netlify.com/)
+3. From the Netlify dashboard, click **Add new site** → **Import an existing project**.
+4. Select GitHub as your Git provider and authorize Netlify to access your repositories if prompted.
+5. Choose the repository containing your project.
+6. Configure the deployment settings:
+   - **Build command**: Leave blank (not required for static HTML, CSS, and JavaScript projects).
+   - **Publish directory**: . (assuming your index.html is located in the project's root directory).
+7. Click **Deploy site** to start the deployment process.
+8. Wait for Netlify to build and publish your website. Once complete, Netlify will generate a temporary URL.
+9. *(Optional)* Rename your site by navigating to Site Configuration → Site Details → Change Site Name to give your website a more memorable URL.
+### Run This Project Locally
+1. Clone the repository
+   ```
+   https://github.com/FlyBoy1998/portfolio-website.git
+   ```
+2. Navigate to the project directory
+   ```
+   cd portfolio-website
+   ```
+3. Install the dependencies
+   ```
+   npm install
+   ```
+4. Compile the SCSS files
+   ```
+   npm run sass:watch
+   ```
+5. Start a local development server
+   If you're using Visual Studio Code, right-click `index.html` and select **Open with Live Server**.
+6. Begin development
+
+## Credits
+### Media
+1. earth-tech.jpg: [Image source](https://unsplash.com/photos/a-planet-in-space-nc1zsYGkLFA) - Photo by [Javier Miranda](https://unsplash.com/@nuvaproductions)
+2. favicon: [Image source](https://icons8.com/icon/kLkU4c9YfQNM/electronic-brain)
+3. Technologies icons: [Source](https://icons8.com/icons)
+4. Multi device mockups: [Yujin Yeoh](https://yujinyeoh.com/website-mockup-generator)
+### Code
+1. Code for all website's icons was created using [Font Awesome](https://fontawesome.com/)
+2. Code for importing Google Fonts inside the `scss/base/_base.scss` file was created using [Google Fonts](https://fonts.google.com/)
+3. Code for animated background overlay was created using [Finisher](https://www.finisher.co/lab/header/)
+4. Code for the overall layout of the application was created using Bootstrap utility classes.
+5. Code for hover tooltip was created using [TippyJS](https://atomiks.github.io/tippyjs/)
+6. Code for the navigation bar was created using [Bootstrap Navbar Component](https://getbootstrap.com/docs/5.3/components/navbar/)
+7. Code for the animated typing was created using [TypedJS](https://github.com/mattboldt/typed.js/)
+8. Code for project details modal was created using [Bootstrap Modal Component](https://getbootstrap.com/docs/5.3/components/modal/#how-it-works)
+9. Code for lighthouse audit summary chart was created using [ChartJS](https://www.chartjs.org/)
+10. Code for contact form was created using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/#overview)

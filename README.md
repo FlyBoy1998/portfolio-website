@@ -12,7 +12,7 @@ This portfolio website highlights my journey as a self-taught web developer. Whi
    - [Projects page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#projects-page)
    - [Contact page](https://github.com/FlyBoy1998/portfolio-website/blob/main/features.md#contact-page)
 2. [Technlogies Used](#technologies-used)
-3. [Testing](#)
+3. [Testing](https://github.com/FlyBoy1998/portfolio-website/blob/main/testing.md)
    - [Validator Testing](#)
    - [Performance, Accessibility and Best Practices](#)
    - [Manual Testing](#)

@@ -1,7 +1,3 @@
-.resume-navbar {
-  @include navbar-theme(resume);
-}
-
 .resume-header .navbar-scroll {
   @include navbar-scroll(resume);
 }

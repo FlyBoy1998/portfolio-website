@@ -1,7 +1,3 @@
-.homepage-navbar {
-  @include navbar-theme(homepage);
-}
-
 .homepage-header .navbar-scroll {
   @include navbar-scroll(homepage);
 }

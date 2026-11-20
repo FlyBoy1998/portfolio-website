@@ -50,3 +50,8 @@ h5,
 h6 {
   font-family: "Orbitron", sans-serif;
 }
+
+:is(a, button, input, textarea):focus-visible {
+  outline: $outline-size $outline-style $color-primary !important;
+  outline-offset: $outline-offset !important;
+}

@@ -1,7 +1,7 @@
 .resume-header {
   @include add-focus(resume);
 
-  background-image: $darken-bg, url("../../assets/images/earth-tech-blue.jpg");
+  background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 
   @include respond(phone-land) {

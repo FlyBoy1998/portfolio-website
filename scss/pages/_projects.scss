@@ -1,7 +1,7 @@
 .projects-header {
   @include add-focus(projects);
 
-  background-image: $darken-bg, url("../../assets/images/earth-tech.jpg");
+  background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 
   @include respond(phone-land) {

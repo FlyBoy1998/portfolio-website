@@ -1,7 +1,7 @@
 .homepage-header {
   @include add-focus(homepage);
 
-  background-image: $darken-bg, url("../../assets/images/earth-tech.jpg");
+  background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 
   @include respond(phone-land) {

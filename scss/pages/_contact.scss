@@ -1,6 +1,4 @@
 .contact-header {
-  @include add-focus(contact);
-
   background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 

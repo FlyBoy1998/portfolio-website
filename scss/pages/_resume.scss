@@ -1,6 +1,4 @@
 .resume-header {
-  @include add-focus(resume);
-
   background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 

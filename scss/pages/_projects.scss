@@ -1,6 +1,4 @@
 .projects-header {
-  @include add-focus(projects);
-
   background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 

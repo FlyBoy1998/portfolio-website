@@ -1,6 +1,4 @@
 .homepage-header {
-  @include add-focus(homepage);
-
   background-image: url("../../assets/images/earth-tech.png");
   @extend %header;
 

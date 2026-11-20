@@ -5,10 +5,16 @@
   transition: all 0.25s ease-out;
 
   &__logo {
+    padding: 0.2rem;
+    border-radius: 10px;
     color: $color-white;
     font-family: "Orbitron", sans-serif;
     transition: color 0.25s ease-out;
     animation: fadeUp $animation-delay-none;
+
+    span {
+      color: $color-primary;
+    }
   }
 
   &__links {

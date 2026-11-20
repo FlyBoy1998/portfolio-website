@@ -83,6 +83,9 @@ $theme-colors: (
   }
 
   .navbar__logo {
+    padding: 0.2rem;
+    border-radius: 10px;
+
     span {
       color: $theme-color;
     }

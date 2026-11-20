@@ -75,51 +75,6 @@ $theme-colors: (
   }
 }
 
-@mixin navbar-theme($page) {
-  $theme-color: map-get($theme-colors, $page);
-
-  @if $theme-color == null {
-    $theme-color: $color-primary;
-  }
-
-  .navbar__logo {
-    padding: 0.2rem;
-    border-radius: 10px;
-
-    span {
-      color: $theme-color;
-    }
-
-    &:hover,
-    &:active {
-      color: $theme-color;
-    }
-  }
-
-  .navbar__links {
-    .hire-me-btn {
-      background-color: $theme-color;
-
-      &:hover,
-      &:active {
-        color: $color-white;
-      }
-    }
-
-    &--link {
-      &:hover,
-      &:active {
-        color: $theme-color;
-      }
-
-      &.active {
-        color: $theme-color;
-        border-bottom: 2px solid $theme-color;
-      }
-    }
-  }
-}
-
 @mixin off-screen-nav($page) {
   $theme-color: map-get($theme-colors, $page);
 

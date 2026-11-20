@@ -2,10 +2,10 @@ const page = document.body.dataset.page;
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const offScreenNav = document.getElementById("off-screen-nav");
 const offScreenNavCloseBtn = document.querySelector(
-  ".off-screen-nav__close-btn"
+  ".off-screen-nav__close-btn",
 );
 const offScreenNavLinks = document.querySelectorAll(
-  ".off-screen-nav__links--link"
+  ".off-screen-nav__links--link",
 );
 const scrollerInner = document.querySelector(".scroller__inner");
 
@@ -54,15 +54,17 @@ function setTippyProps(element, theme, content) {
 
 function setTippyTooltips() {
   if (page === "homepage") {
-    const githubLink = document.querySelector(".cta-buttons__github");
-    const linkedInLink = document.querySelector(".cta-buttons__linked-in");
+    const githubLink = document.querySelector(".hero__cta-buttons--github");
+    const linkedInLink = document.querySelector(
+      ".hero__cta-buttons--linked-in",
+    );
     setTippyProps(githubLink, "primary", "GitHub");
     setTippyProps(linkedInLink, "primary", "LinkedIn");
   }
 
   if (page === "resume") {
     const skillsDetailsBtn = document.querySelector(
-      ".scroller__skills-details-btn"
+      ".scroller__skills-details-btn",
     );
     setTippyProps(skillsDetailsBtn, "secondary", "Skills Details");
   }

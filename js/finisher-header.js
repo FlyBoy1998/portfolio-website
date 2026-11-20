@@ -17,7 +17,7 @@ new FinisherHeader({
   },
   colors: {
     background: "#201e3000",
-    particles: ["#ffc04a", "#2cc3ff", "#ffb428"],
+    particles: ["#ffc04a"],
   },
   blending: "screen",
   opacity: {

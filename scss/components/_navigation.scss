@@ -15,6 +15,10 @@
     span {
       color: $color-primary;
     }
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   &__links {

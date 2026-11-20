@@ -17,14 +17,43 @@
     animation: fadeUp $animation-delay-100;
 
     .hire-me-btn {
-      padding: 3.2rem 2rem;
-      border-radius: 2rem;
-      color: $color-black;
-      transition: color 0.25s ease-out;
+      position: relative;
+      padding: 12px 32px;
+      border: 1px solid $color-primary;
+      border-radius: 50px;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 176, 30, 0.75),
+        rgba(255, 136, 0, 0.06)
+      );
+      color: $color-white;
+      text-decoration: none;
+      box-shadow:
+        0 0 5px rgba(255, 174, 20, 0.9),
+        0 0 12px rgba(255, 153, 0, 0.65),
+        0 0 25px rgba(255, 140, 0, 0.35),
+        inset 0 0 8px rgba(255, 174, 20, 0.12);
+      animation: hireMeGlow 3s ease-in-out infinite;
+      transition: all 0.3s ease;
+      &:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 177, 30, 0.3),
+          rgba(255, 136, 0, 0.12)
+        );
 
-      &:hover,
-      &:active {
-        color: $color-white;
+        box-shadow:
+          0 0 7px $color-primary,
+          0 0 18px rgba(255, 166, 0, 0.85),
+          0 0 35px rgba(255, 140, 0, 0.55),
+          inset 0 0 12px rgba(255, 174, 20, 0.2);
+        transform: translateY(-2px);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        & {
+          animation: none;
+        }
       }
     }
 

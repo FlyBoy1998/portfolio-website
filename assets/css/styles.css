@@ -79,6 +79,30 @@
     box-shadow: 0 0 10px rgb(255, 190, 50), 0 0 18px rgba(255, 153, 0, 0.8), 0 0 35px rgba(255, 140, 0, 0.5);
   }
 }
+@keyframes waveFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-22px) translateX(12px);
+  }
+}
+@keyframes meshFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+@keyframes lineFlow {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -300;
+  }
+}
 #finisher-canvas {
   background-color: rgba(0, 0, 0, 0) !important;
   z-index: 0 !important;
@@ -969,4 +993,62 @@ h6 {
 }
 .contact-header .flex-container .form-section .contact-form__submit-btn:hover, .contact-header .flex-container .form-section .contact-form__submit-btn:active {
   color: #f5f5f5;
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wave-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.wave {
+  transform-origin: center;
+  animation: waveFloat 12s ease-in-out infinite;
+}
+
+.wave-back {
+  animation-duration: 18s;
+}
+
+.wave-main {
+  animation-duration: 14s;
+  animation-delay: -4s;
+}
+@media only screen and (max-width: 48em) {
+  .wave-main {
+    filter: none;
+  }
+}
+
+.wave-front {
+  animation-duration: 20s;
+  animation-delay: -8s;
+}
+
+.mesh {
+  animation: meshFloat 22s ease-in-out infinite;
+}
+
+.wave-line {
+  stroke-dasharray: 12 18;
+  animation: lineFlow 18s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave,
+  .mesh,
+  .wave-line {
+    animation: none !important;
+  }
 }

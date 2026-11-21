@@ -114,13 +114,39 @@
       }
 
       &--download-cv {
+        position: relative;
         border-radius: 2rem;
         padding-left: 2.2rem;
         padding-right: 2.2rem;
         font-family: "Orbitron", sans-serif;
-        font-weight: 700;
-        color: $color-primary;
+        font-weight: 800;
+        color: $color-black;
         animation: fadeUp $animation-delay-500;
+        z-index: 1;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          isolation: isolate;
+          border-radius: inherit;
+          background: linear-gradient(
+            var(--gradient-angle),
+            $color-gradient-gold-1,
+            $color-gradient-gold-2
+          );
+          animation: rotation 20s linear infinite;
+          z-index: -1;
+
+          @media (prefers-reduced-motion: reduce) {
+            animation: none;
+          }
+        }
+
+        &::after {
+          filter: blur(3.5rem);
+        }
       }
 
       &--github,

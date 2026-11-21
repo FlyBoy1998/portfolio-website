@@ -13,12 +13,3 @@
   > .tippy-arrow::before {
   color: $color-primary;
 }
-
-.tippy-box[data-theme~="secondary"] {
-  background-color: $color-secondary;
-}
-
-.tippy-box[data-theme~="secondary"][data-placement^="bottom"]
-  > .tippy-arrow::before {
-  color: $color-secondary;
-}

@@ -25,6 +25,12 @@ html {
   }
 }
 
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 ::-webkit-scrollbar {
   -webkit-box-shadow: inset 0 0 5px $color-primary;
   box-shadow: inset 0 0 5px $color-primary;

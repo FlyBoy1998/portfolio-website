@@ -1,16 +1,16 @@
-$color-primary: #ffb428;
-$color-primary-light: #ffc04a;
-$color-primary-dark: #d18a06;
-$color-primary-transparent-1: #ffb42845;
-$color-primary-transparent-2: #ffb42870;
-$color-blue-dark: #0a0a56;
-$color-white: #f5f5f5;
-$color-black: #101010;
-$color-black-transparent: #101010a0;
-$color-gray: #919191;
-$color-gray-light: #bdbdbd;
-$color-gray-dark: #7a7a7a;
-$color-smoke-dark: #212121;
+$color-primary: rgb(249, 188, 77);
+$color-primary-light: rgb(255, 192, 74);
+$color-primary-dark: rgb(209, 138, 6);
+$color-primary-transparent-1: rgba(255, 180, 40, 0.27);
+$color-primary-transparent-2: rgba(255, 180, 40, 0.44);
+$color-blue-dark: rgb(10, 10, 86);
+$color-white: rgb(245, 245, 245);
+$color-black: rgb(16, 16, 16);
+$color-black-transparent: rgba(16, 16, 16, 0.63);
+$color-gray: rgb(145, 145, 145);
+$color-gray-light: rgb(189, 189, 189);
+$color-gray-dark: rgb(122, 122, 122);
+$color-smoke-dark: rgb(33, 33, 33);
 
 $darken-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 

@@ -1,0 +1,56 @@
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wave-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.wave {
+  transform-origin: center;
+  animation: waveFloat 12s ease-in-out infinite;
+}
+
+.wave-back {
+  animation-duration: 18s;
+}
+
+.wave-main {
+  animation-duration: 14s;
+  animation-delay: -4s;
+
+  @include respond(tab-port) {
+    filter: none;
+  }
+}
+
+.wave-front {
+  animation-duration: 20s;
+  animation-delay: -8s;
+}
+
+.mesh {
+  animation: meshFloat 22s ease-in-out infinite;
+}
+
+.wave-line {
+  stroke-dasharray: 12 18;
+  animation: lineFlow 18s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave,
+  .mesh,
+  .wave-line {
+    animation: none !important;
+  }
+}

@@ -31,13 +31,13 @@
 
     &--icon {
       height: 6rem;
-      background-color: $color-secondary-transparent-1;
+      background-color: $color-primary-transparent-1;
       border-radius: 1rem;
       transition: background-color 0.25s ease-out;
 
       &:hover {
         cursor: pointer;
-        background-color: $color-secondary-transparent-2;
+        background-color: $color-primary-transparent-2;
       }
     }
   }

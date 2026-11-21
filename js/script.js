@@ -95,7 +95,7 @@ function setScrollerTippyTooltip() {
       if (e.target.classList.contains("scroller__inner--icon")) {
         const targetEl = e.target;
         const techName = targetEl.dataset.techName;
-        setTippyProps(targetEl, "secondary", techName);
+        setTippyProps(targetEl, "primary", techName);
         pauseScroller();
       }
     });

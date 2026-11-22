@@ -1,5 +1,5 @@
 const resumeSubtextHighlight = document.querySelector(
-  ".resume-subtext__highlight",
+  ".resume__subtext--highlight",
 );
 const tabButtons = document.querySelectorAll(".resume__tab-buttons--button");
 const tabContent = document.querySelectorAll(".tab-content__tab");

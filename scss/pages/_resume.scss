@@ -14,8 +14,8 @@
       flex: 1 1 100%;
     }
 
-    .main-content {
-      .resume-heading {
+    .resume {
+      &__heading {
         @extend %main-heading;
         animation: fadeUp $animation-delay-300;
 
@@ -33,7 +33,7 @@
         }
       }
 
-      .resume-subtext {
+      &__subtext {
         color: $color-gray;
         letter-spacing: 1.1px;
         animation: fadeUp $animation-delay-400;
@@ -43,7 +43,7 @@
         }
       }
 
-      .tab-buttons {
+      &__tab-buttons {
         gap: 1rem;
 
         & > * {
@@ -72,18 +72,18 @@
           }
         }
 
-        &__button.active {
+        &--button.active {
           background-color: $color-primary-dark;
           color: $color-white;
         }
 
-        &__button:nth-of-type(1) {
+        &--button:nth-of-type(1) {
           animation: fadeUp $animation-delay-500;
         }
-        &__button:nth-of-type(2) {
+        &--button:nth-of-type(2) {
           animation: fadeUp $animation-delay-600;
         }
-        &__button:nth-of-type(3) {
+        &--button:nth-of-type(3) {
           animation: fadeUp $animation-delay-700;
         }
       }

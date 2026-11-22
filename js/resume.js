@@ -1,7 +1,7 @@
 const resumeSubtextHighlight = document.querySelector(
-  ".resume-subtext__highlight"
+  ".resume-subtext__highlight",
 );
-const tabButtons = document.querySelectorAll(".tab-buttons__button");
+const tabButtons = document.querySelectorAll(".resume__tab-buttons--button");
 const tabContent = document.querySelectorAll(".tab-content__tab");
 const scroller = document.querySelector(".scroller");
 
@@ -41,7 +41,7 @@ function selectResumeTab() {
 
 function addScrollAnimation() {
   const prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
+    "(prefers-reduced-motion: reduce)",
   ).matches;
 
   if (!prefersReducedMotion) {

@@ -15,6 +15,8 @@
     }
 
     .resume {
+      gap: 1rem;
+
       &__heading {
         @extend %main-heading;
         animation: fadeUp $animation-delay-300;
@@ -38,7 +40,7 @@
         letter-spacing: 1.1px;
         animation: fadeUp $animation-delay-400;
 
-        &__highlight {
+        &--highlight {
           color: $color-primary;
         }
       }
@@ -85,6 +87,61 @@
         }
         &--button:nth-of-type(3) {
           animation: fadeUp $animation-delay-700;
+        }
+      }
+
+      &__core-competencies {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--item {
+          display: flex;
+          gap: 1rem;
+
+          &--icon {
+            isolation: isolate;
+            width: 4rem;
+            height: 4rem;
+            font-size: 1.4rem;
+            border-radius: 1rem;
+            color: $color-white;
+            background: $color-black;
+            color: $color-primary;
+
+            &::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              padding: 2px;
+              border-radius: inherit;
+              background: linear-gradient(
+                135deg,
+                $color-primary,
+                rgba($color-primary, 0.1),
+                $color-primary
+              );
+              -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+              mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+              -webkit-mask-composite: xor;
+              mask-composite: exclude;
+              z-index: -1;
+              pointer-events: none;
+            }
+          }
+
+          &--content p {
+            margin: 0;
+            letter-spacing: 1.1px;
+
+            &:nth-of-type(2) {
+              color: $color-gray;
+            }
+          }
         }
       }
     }

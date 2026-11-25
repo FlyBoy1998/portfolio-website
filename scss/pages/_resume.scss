@@ -10,12 +10,9 @@
     gap: 1rem;
     z-index: 2;
 
-    & > * {
-      flex: 1 1 100%;
-    }
-
     .resume {
       gap: 1rem;
+      flex: 1 1 35%;
 
       &__heading {
         @extend %main-heading;
@@ -154,6 +151,7 @@
     }
 
     .tab-content {
+      flex: 1 1 65%;
       backdrop-filter: blur(1rem) brightness(40%);
       border-radius: 1rem;
       overflow-y: auto;
@@ -170,11 +168,68 @@
         padding-right: 0.8rem;
 
         &.active {
-          display: block;
+          display: flex;
+        }
+
+        &--skills-tab-buttons {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1rem;
+          width: 100%;
+          border: 2px solid $color-primary;
+          border-radius: 3rem;
+          background-color: $color-black;
+
+          &--button {
+            position: relative;
+            outline: none;
+            padding: 0.6rem 1rem;
+            border-radius: 3rem;
+            background-color: transparent;
+            color: $color-white;
+            transition: all 0.3s linear;
+            z-index: 1;
+
+            &:hover,
+            &:active,
+            &.active {
+              background-color: $color-primary;
+              color: $color-black;
+            }
+
+            &.active::before,
+            &.active::after {
+              content: "";
+              position: absolute;
+              inset: 0;
+              isolation: isolate;
+              border-radius: inherit;
+              background: linear-gradient(
+                var(--gradient-angle),
+                $color-gradient-gold-1,
+                $color-gradient-gold-2
+              );
+              animation: rotation 5s linear infinite;
+              z-index: -1;
+
+              @media (prefers-reduced-motion: reduce) {
+                animation: none;
+              }
+            }
+          }
         }
 
         &--heading {
-          color: $color-primary;
+          color: $color-white;
+          gap: 1rem;
+
+          i {
+            color: $color-primary;
+          }
+
+          p:nth-of-type(2) {
+            font-family: "Roboto", "sans-serif";
+          }
         }
 
         &--lead-paragraph {

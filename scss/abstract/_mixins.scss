@@ -30,3 +30,36 @@
     } // 1800px
   }
 }
+
+@mixin gradient-border($width: 2px, $radius: inherit) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: $width;
+    border-radius: $radius;
+
+    background: linear-gradient(
+      135deg,
+      $color-primary,
+      rgba($color-primary, 0.1),
+      $color-primary
+    );
+
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    z-index: -1;
+    pointer-events: none;
+  }
+}

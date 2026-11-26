@@ -88,24 +88,6 @@ function setTippyTooltips() {
   }
 }
 
-function setScrollerTippyTooltip() {
-  if (page === "resume") {
-    const scrollerInner = document.querySelector(".scroller__inner");
-    scrollerInner.addEventListener("mouseover", (e) => {
-      if (e.target.classList.contains("scroller__inner--icon")) {
-        const targetEl = e.target;
-        const techName = targetEl.dataset.techName;
-        setTippyProps(targetEl, "primary", techName);
-        pauseScroller();
-      }
-    });
-    scrollerInner.addEventListener("mouseleave", () => {
-      runScroller();
-    });
-  }
-}
-
 hamburgerBtn.addEventListener("click", displayOffScreenNav);
 offScreenNavCloseBtn.addEventListener("click", hideOffScreenNav);
-setScrollerTippyTooltip();
 setTippyTooltips();

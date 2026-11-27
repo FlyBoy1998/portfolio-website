@@ -67,7 +67,7 @@
             <li>
               <a
                 class="navbar__links--link text-decoration-none d-inline-block h-100 py-2"
-                href="projects.html"
+                href="#projects-section"
                 >Projects</a
               >
             </li>
@@ -191,7 +191,7 @@
       <!-- Resume section -->
       <section
         id="resume-section"
-        class="d-flex flex-column flex-sm-row position-relative min-vh-100"
+        class="section d-flex flex-column flex-sm-row position-relative"
       >
         <div
           class="resume d-flex flex-column align-items-center align-items-sm-start mb-sm-0"
@@ -318,6 +318,16 @@
           </div>
         </div>
       </section>
+
+      <!-- Projects section -->
+      <section
+        id="projects-section"
+        class="section projects-container position-relative d-flex align-items-center"
+      >
+        <div class="projects d-flex flex-column">
+          <h1 class="projects__heading">Featured Projects</h1>
+        </div>
+      </section>
     </main>
 
     <!-- Scripts -->
@@ -331,9 +341,12 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/animations.js"></script>
     <script src="./js/constants/data.js" type="module"></script>
     <script src="./js/resume.js" type="module"></script>
+    <script src="./js/chart.js" type="module"></script>
+    <script src="./js/projects.js" type="module"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

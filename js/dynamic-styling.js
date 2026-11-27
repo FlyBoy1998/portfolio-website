@@ -1,5 +1,6 @@
 const navbar = document.querySelector(".navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
+const sections = document.querySelectorAll(".section");
 
 function isMobileViewport() {
   return window.matchMedia("(max-width: 992px) and (pointer: coarse)").matches;
@@ -9,7 +10,7 @@ function isLandscape() {
   return window.matchMedia("(orientation: landscape)").matches;
 }
 
-function setDynamicPadding() {
+function setHeaderPadding() {
   const header = document.querySelector("header");
 
   if (isMobileViewport() && isLandscape()) {
@@ -19,6 +20,12 @@ function setDynamicPadding() {
     header.style.paddingTop = "0px";
     header.style.paddingBottom = "0px";
   }
+}
+
+function setSectionsHeight() {
+  sections.forEach(
+    (section) => (section.style.minHeight = `calc(100vh - ${navbarHeight}px)`),
+  );
 }
 
 function navbarScrollStyling() {
@@ -31,7 +38,8 @@ function navbarScrollStyling() {
   }
 }
 
-window.addEventListener("DOMContentLoaded", setDynamicPadding);
-window.addEventListener("resize", setDynamicPadding);
-window.addEventListener("orientationchange", setDynamicPadding);
+["DOMContentLoaded", "resize", "orientationchange"].forEach((event) =>
+  window.addEventListener(event, setHeaderPadding),
+);
 window.addEventListener("scroll", navbarScrollStyling);
+setSectionsHeight();

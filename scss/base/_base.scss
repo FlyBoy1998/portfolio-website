@@ -52,6 +52,11 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: $color-blue-dark;
   font-size: 1.6rem;
+  background-image: url("../../assets/images/earth-tech.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 h1,

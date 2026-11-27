@@ -24,8 +24,10 @@ function setDynamicPadding() {
 function navbarScrollStyling() {
   if (window.scrollY > 0) {
     navbar.classList.add("navbar-scroll");
+    document.documentElement.style.scrollPaddingTop = `${navbarHeight}px`;
   } else {
     navbar.classList.remove("navbar-scroll");
+    document.documentElement.style.scrollPaddingTop = 0;
   }
 }
 

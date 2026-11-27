@@ -7,6 +7,15 @@
   font-weight: 800;
   color: $color-white;
 
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to right, $color-primary-dark, transparent 40%);
+    filter: blur(1rem);
+  }
+
   @include respond(desktop-small) {
     font-size: $fs-large;
   }

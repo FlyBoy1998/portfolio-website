@@ -42,19 +42,6 @@
     &__title {
       @extend %main-heading;
       animation: fadeUp $animation-delay-300;
-
-      &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: linear-gradient(
-          to right,
-          $color-primary-dark,
-          transparent 60%
-        );
-        filter: blur(1rem);
-      }
     }
 
     &__description {

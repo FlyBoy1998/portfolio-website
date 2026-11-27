@@ -1,240 +1,269 @@
-.resume-header {
-  background-image: url("../../assets/images/earth-tech.png");
-  @extend %header;
+#resume-section {
+  gap: 1rem;
+  z-index: 2;
 
   @include respond(phone-land) {
     padding: 6rem 0;
   }
 
-  .flex-container {
+  .resume {
     gap: 1rem;
-    z-index: 2;
+    flex: 1 1 35%;
 
-    .resume {
+    &__heading {
+      @extend %main-heading;
+      animation: fadeUp $animation-delay-300;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(
+          to right,
+          $color-primary-dark,
+          transparent 60%
+        );
+        filter: blur(1rem);
+      }
+    }
+
+    &__subtext {
+      color: $color-gray;
+      letter-spacing: 1.1px;
+      animation: fadeUp $animation-delay-400;
+
+      &--highlight {
+        color: $color-primary;
+      }
+    }
+
+    &__tab-buttons {
       gap: 1rem;
-      flex: 1 1 35%;
 
-      &__heading {
-        @extend %main-heading;
-        animation: fadeUp $animation-delay-300;
+      & > * {
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0.8rem 2rem;
+        outline: none;
+        border: 2px solid $color-primary-dark;
+        width: 11rem;
+        max-width: 20rem;
+        border-radius: 2rem;
+        color: $color-primary;
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+        transition: all 0.15s ease-out;
 
-        &::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: -1;
-          background: linear-gradient(
-            to right,
-            $color-primary-dark,
-            transparent 60%
-          );
-          filter: blur(1rem);
-        }
-      }
-
-      &__subtext {
-        color: $color-gray;
-        letter-spacing: 1.1px;
-        animation: fadeUp $animation-delay-400;
-
-        &--highlight {
-          color: $color-primary;
-        }
-      }
-
-      &__tab-buttons {
-        gap: 1rem;
-
-        & > * {
-          cursor: pointer;
-          background-color: transparent;
-          padding: 0.8rem 2rem;
-          outline: none;
-          border: 2px solid $color-primary-dark;
-          width: 11rem;
-          max-width: 20rem;
-          border-radius: 2rem;
-          color: $color-primary;
-          font-family: "Orbitron", sans-serif;
-          font-weight: 700;
-          transition: all 0.15s ease-out;
-
-          @include respond(phone-port) {
-            width: 24rem;
-            max-width: 30rem;
-          }
-
-          &:hover,
-          &:active {
-            background-color: $color-primary-dark;
-            color: $color-white;
-          }
+        @include respond(phone-port) {
+          width: 24rem;
+          max-width: 30rem;
         }
 
-        &--button.active {
+        &:hover,
+        &:active {
           background-color: $color-primary-dark;
           color: $color-white;
         }
-
-        &--button:nth-of-type(1) {
-          animation: fadeUp $animation-delay-500;
-        }
-        &--button:nth-of-type(2) {
-          animation: fadeUp $animation-delay-600;
-        }
       }
 
-      &__core-competencies {
+      &--button.active {
+        background-color: $color-primary-dark;
+        color: $color-white;
+      }
+
+      &--button:nth-of-type(1) {
+        animation: fadeUp $animation-delay-500;
+      }
+      &--button:nth-of-type(2) {
+        animation: fadeUp $animation-delay-600;
+      }
+    }
+
+    &__core-competencies {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &--item {
         display: flex;
-        flex-direction: column;
         gap: 1rem;
 
-        &--item {
-          display: flex;
-          gap: 1rem;
+        &:nth-of-type(1) {
+          animation: fadeUp $animation-delay-600;
+        }
+        &:nth-of-type(2) {
+          animation: fadeUp $animation-delay-700;
+        }
+        &:nth-of-type(3) {
+          animation: fadeUp $animation-delay-800;
+        }
 
-          &:nth-of-type(1) {
-            animation: fadeUp $animation-delay-600;
+        &--icon {
+          isolation: isolate;
+          width: 4rem;
+          height: 4rem;
+          font-size: 1.4rem;
+          border-radius: 1rem;
+          color: $color-white;
+          background: $color-black;
+          color: $color-primary;
+
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            border-radius: inherit;
+            background: linear-gradient(
+              135deg,
+              $color-primary,
+              rgba($color-primary, 0.1),
+              $color-primary
+            );
+            -webkit-mask:
+              linear-gradient(#fff 0 0) content-box,
+              linear-gradient(#fff 0 0);
+            mask:
+              linear-gradient(#fff 0 0) content-box,
+              linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+            pointer-events: none;
           }
+        }
+
+        &--content p {
+          margin: 0;
+          letter-spacing: 1.1px;
+
           &:nth-of-type(2) {
-            animation: fadeUp $animation-delay-700;
-          }
-          &:nth-of-type(3) {
-            animation: fadeUp $animation-delay-800;
-          }
-
-          &--icon {
-            isolation: isolate;
-            width: 4rem;
-            height: 4rem;
-            font-size: 1.4rem;
-            border-radius: 1rem;
-            color: $color-white;
-            background: $color-black;
-            color: $color-primary;
-
-            &::before {
-              content: "";
-              position: absolute;
-              inset: 0;
-              padding: 2px;
-              border-radius: inherit;
-              background: linear-gradient(
-                135deg,
-                $color-primary,
-                rgba($color-primary, 0.1),
-                $color-primary
-              );
-              -webkit-mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-              mask:
-                linear-gradient(#fff 0 0) content-box,
-                linear-gradient(#fff 0 0);
-              -webkit-mask-composite: xor;
-              mask-composite: exclude;
-              z-index: -1;
-              pointer-events: none;
-            }
-          }
-
-          &--content p {
-            margin: 0;
-            letter-spacing: 1.1px;
-
-            &:nth-of-type(2) {
-              color: $color-gray;
-            }
+            color: $color-gray;
           }
         }
       }
     }
+  }
 
-    .tab-content {
-      flex: 1 1 65%;
-      backdrop-filter: blur(1rem) brightness(40%);
-      border-radius: 1rem;
-      overflow-y: auto;
-      animation: fadeUp $animation-delay-900;
+  .tab-content {
+    flex: 1 1 65%;
+    backdrop-filter: blur(1rem) brightness(40%);
+    border-radius: 1rem;
+    overflow-y: auto;
+    animation: fadeUp $animation-delay-900;
 
-      @include respond(phone-port) {
-        max-width: 30rem;
-        max-height: 14.2rem;
+    @include gradient-border;
+
+    @include respond(phone-port) {
+      max-width: 30rem;
+      max-height: 14.2rem;
+    }
+
+    &__tab {
+      display: none;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+
+      &.active {
+        display: flex;
       }
 
-      &__tab {
-        display: none;
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
+      &--skills-tab-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        width: 100%;
+        border: 2px solid $color-primary;
+        border-radius: 3rem;
+        background-color: $color-black;
 
-        &.active {
-          display: flex;
-        }
-
-        &--skills-tab-buttons {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 1rem;
-          width: 100%;
-          border: 2px solid $color-primary;
+        &--button {
+          position: relative;
+          outline: none;
+          padding: 0.6rem 1rem;
           border-radius: 3rem;
-          background-color: $color-black;
-
-          &--button {
-            position: relative;
-            outline: none;
-            padding: 0.6rem 1rem;
-            border-radius: 3rem;
-            background-color: transparent;
-            color: $color-white;
-            transition: all 0.3s linear;
-            z-index: 1;
-
-            &:hover,
-            &:active,
-            &.active {
-              background-color: $color-primary;
-              color: $color-black;
-            }
-
-            &.active::before,
-            &.active::after {
-              content: "";
-              position: absolute;
-              inset: 0;
-              isolation: isolate;
-              border-radius: inherit;
-              background: linear-gradient(
-                var(--gradient-angle),
-                $color-gradient-gold-1,
-                $color-gradient-gold-2
-              );
-              animation: rotation 5s linear infinite;
-              z-index: -1;
-
-              @media (prefers-reduced-motion: reduce) {
-                animation: none;
-              }
-            }
-          }
-        }
-
-        &--heading {
+          background-color: transparent;
           color: $color-white;
-          gap: 1rem;
+          transition: all 0.15s ease-out;
+          z-index: 1;
 
-          i {
-            color: $color-primary;
+          &:hover,
+          &:active,
+          &.active {
+            background-color: $color-primary;
+            color: $color-black;
           }
 
-          p:nth-of-type(2) {
-            font-family: "Roboto", "sans-serif";
+          &.active::before,
+          &.active::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            isolation: isolate;
+            border-radius: inherit;
+            background: linear-gradient(
+              var(--gradient-angle),
+              $color-gradient-gold-1,
+              $color-gradient-gold-2
+            );
+            animation: rotation 5s linear infinite;
+            z-index: -1;
+
+            @media (prefers-reduced-motion: reduce) {
+              animation: none;
+            }
           }
         }
+      }
 
-        &--lead-paragraph {
-          letter-spacing: 1.1px;
+      &--skills {
+        .skills-tab {
+          display: none;
+
+          &.active {
+            display: block;
+          }
+
+          &__icons {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+
+            & > * {
+              padding: 1rem;
+              border-radius: 3rem;
+
+              @include gradient-border;
+            }
+
+            &--icon-wrapper {
+              width: 5rem;
+            }
+
+            p {
+              margin: 0;
+              color: $color-white;
+            }
+          }
         }
+      }
+
+      &--heading {
+        color: $color-white;
+        gap: 1rem;
+
+        i {
+          color: $color-primary;
+        }
+
+        p:nth-of-type(2) {
+          font-family: "Roboto", "sans-serif";
+        }
+      }
+
+      &--lead-paragraph {
+        letter-spacing: 1.1px;
       }
     }
   }

@@ -1,7 +1,4 @@
 .contact-header {
-  background-image: url("../../assets/images/earth-tech.png");
-  @extend %header;
-
   @include respond(phone-land) {
     padding: 6rem 0;
   }

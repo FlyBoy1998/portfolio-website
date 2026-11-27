@@ -60,7 +60,7 @@
             <li>
               <a
                 class="navbar__links--link text-decoration-none d-inline-block h-100 py-2"
-                href="resume.html"
+                href="#resume-section"
                 >Resume</a
               >
             </li>
@@ -187,6 +187,139 @@
       <div class="wave-container"></div>
     </header>
 
+    <main class="container">
+      <!-- Resume section -->
+      <section
+        id="resume-section"
+        class="d-flex flex-column flex-sm-row position-relative min-vh-100"
+      >
+        <div
+          class="resume d-flex flex-column align-items-center align-items-sm-start mb-sm-0"
+        >
+          <h1 class="resume__heading fade-up-initial">Why hire me?</h1>
+          <p class="resume__subtext fade-up-initial">
+            I am a <span class="resume__subtext--highlight"></span>
+          </p>
+          <div
+            class="resume__tab-buttons d-flex flex-column flex-sm-row justify-content-center mb-4 justify-content-sm-start align-items-center align-items-sm-start"
+          >
+            <button
+              class="resume__tab-buttons--button active fade-up-initial fs-5"
+              data-button-tab="about-me"
+            >
+              About Me
+            </button>
+            <button
+              class="resume__tab-buttons--button fade-up-initial fs-5"
+              data-button-tab="skills"
+            >
+              Skills
+            </button>
+          </div>
+          <div class="resume__core-competencies">
+            <div class="resume__core-competencies--item fade-up-initial">
+              <div
+                class="resume__core-competencies--item--icon position-relative d-flex justify-content-center align-items-center p-4"
+              >
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+              </div>
+              <div
+                class="resume__core-competencies--item--content d-flex flex-column"
+              >
+                <p class="fs-4 fw-bold text-white">Full-Stack Development</p>
+                <p class="fs-5">Front-end, back-end and databases</p>
+              </div>
+            </div>
+            <div class="resume__core-competencies--item fade-up-initial">
+              <div
+                class="resume__core-competencies--item--icon position-relative d-flex justify-content-center align-items-center p-4"
+              >
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              </div>
+              <div
+                class="resume__core-competencies--item--content d-flex flex-column"
+              >
+                <p class="fs-4 fw-bold text-white">Problem solving</p>
+                <p class="fs-5">Debugging, testing and optimisation</p>
+              </div>
+            </div>
+            <div class="resume__core-competencies--item fade-up-initial">
+              <div
+                class="resume__core-competencies--item--icon position-relative d-flex justify-content-center align-items-center p-4"
+              >
+                <i class="fa-solid fa-users" aria-hidden="true"></i>
+              </div>
+              <div
+                class="resume__core-competencies--item--content d-flex flex-column"
+              >
+                <p class="fs-4 fw-bold text-white">Team & Stakeholder focus</p>
+                <p class="fs-5">Clear communication and reliable delivery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-content align-self-center align-self-sm-start fade-up-initial p-4"
+        >
+          <div id="about-me" class="tab-content__tab flex-column active">
+            <h2 class="tab-content__tab--heading fs-2 fw-bold mb-3">
+              About me
+            </h2>
+            <p
+              class="tab-content__tab--lead-paragraph lead lh-lg text-white m-0"
+            >
+              With over 6 years of experience as a Special Actions Service
+              prison officer, I have extensive experience working in a team and
+              highly developed attention to detail.
+            </p>
+          </div>
+          <div id="skills" class="tab-content__tab flex-column">
+            <div class="tab-content__tab--skills-tab-buttons">
+              <button
+                class="tab-content__tab--skills-tab-buttons--button border-0 fs-5 fw-semibold active"
+                data-skill-tab-button="all-skills"
+              >
+                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                <span>All Skills</span>
+              </button>
+              <button
+                class="tab-content__tab--skills-tab-buttons--button border-0 fs-5 fw-semibold"
+                data-skill-tab-button="front-end"
+              >
+                <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                <span>Front-End</span>
+              </button>
+              <button
+                class="tab-content__tab--skills-tab-buttons--button border-0 fs-5 fw-semibold"
+                data-skill-tab-button="back-end"
+              >
+                <i class="fa-solid fa-server" aria-hidden="true"></i>
+                <span>Back-End</span>
+              </button>
+              <button
+                class="tab-content__tab--skills-tab-buttons--button border-0 fs-5 fw-semibold"
+                data-skill-tab-button="tools"
+              >
+                <i
+                  class="fa-solid fa-screwdriver-wrench"
+                  aria-hidden="true"
+                ></i>
+                <span>Tools</span>
+              </button>
+            </div>
+            <div class="tab-content__tab--skills">
+              <div id="all-skills" class="skills-tab active">
+                <div class="skills-tab__icons"></div>
+              </div>
+              <div id="front-end" class="skills-tab">FRONT END</div>
+              <div id="back-end" class="skills-tab">BACK END</div>
+              <div id="tools" class="skills-tab">TOOLS</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- Scripts -->
     <script
       src="./js/finisher-header.es5.min.js"
@@ -197,7 +330,10 @@
     <script src="./js/dynamic-styling.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./js/animations.js"></script>
+    <script src="./js/constants/data.js" type="module"></script>
+    <script src="./js/resume.js" type="module"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
